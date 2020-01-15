@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Artistic Style - 代码格式化工具]]></title>
+    <url>%2F2020%2F01%2F03%2FLanguage-CXX-2020-0103-Artistic-Style-%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%B7%A5%E5%85%B7%2F</url>
+    <content type="text"><![CDATA[软件开发中,每个人都有自己的代码编写风格, 即使是同一个人在不同时期也会有不同的代码编写风格, 所以在实际的项目开发过程中不对代码编写风格进行统一约束,会对往后的项目开发及维护带来很大的挑战,将会成为影响项目开发进度的致命因素.代码编写风格统一的重要性,相信做过实际项目开发(特别是多人项目开发)的人深有体会. 那么在实现项目开发中,怎么有效地统一所有人代码风格呢, 这里介绍一个代码格式化工具– Artistic Style .Artistic Style是一个源代码风格格式化工具, 可以为C、 C + +/CLI、objective- C, C#, Java等语言做风格美化.详细链接,可以查看Artistic Style官网说明文档.下面是我的一个Artistic Style配置文件.astylerc 以供参考. --mode=c #ANSI标准的文件格式， #--style=ansi ：ANSI 风格格式和缩进, 所有大括号都独立一行, 不好看, 拒绝使用 #--style=kr ：Kernighan&amp;Ritchie 风格格式和缩进, 缩进比上一行前进一个缩进 #--style=linux ：Linux 风格格式和缩进, 与上一行对齐, 比较喜欢这个风格 #--style=gnu ：gnu 风格格式和缩进, 不好看, 拒绝使用 --style=linux #缩进采用4个空格 --indent=spaces=4 #对于单行的语句增加括号 (e.g. &#39;if&#39;, &#39;for&#39;, &#39;while&#39;...). --add-brackets #强制转换TAB为空格 --convert-tabs #将preprocessor (#define) 这类预定的语句，如果有多行时前面填充对齐，（是对单语句（多行）进行填充呀） --indent-preprocessor #Attach a pointer or reference operator (* or &amp;) to either the variable type (left) or variable name (right), or place it between the type and name. #*,&amp;这类字符靠近变量类型(type)或变量名称(name)或两者这间 #*,&amp;这类字符靠近变量名称，例如char *foo1; --align-pointer=name #在操作符号两边增加空格字符 == --pad-oper #如果函数开始后面({后面)第一行是注释，也进行缩进 --indent-col1-comments]]></content>
+      <categories>
+        <category>Language</category>
+        <category>CXX</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>format</tag>
+        <tag>artistic</tag>
+        <tag>style</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Python基础语法]]></title>
+    <url>%2F2019%2F12%2F19%2FLanguage-Python-2019-12-19-%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[Python命令行参数 使用 sys.argv 获取示例代码: #!/usr/bin/python # -*- coding: UTF-8 -*- import sys print(&quot;len:&quot;, len(sys.argv)) print(&quot;list:&quot;, str(sys.argv)) sys.argv : 是命令行的参数列表, 包含应用程序名字 len(sys.argv): 为命令行参数个数 使用 getopt模块获取该模块是专门用来处理命令行参数, 该模块能更灵活的解析参数列表. 支持短选项模式 - 和长选项模式 -- . getopt.getopt方法原型如下: getopt.getopt(args, options[, long_options]) 其中: args: 要解析的命令行参数 options : 以字符串的格式定义，options 后的冒号 : 表示如果设置该选项，必须有附加的参数，否则就不附加参数。 long_options : 以列表的格式定义，long_options 后的等号 = 表示该选项必须有附加的参数，不带冒号表示该选项不附加参数。 该方法返回值由两个元素组成: 第一个是 (option, value) 元组的列表。 第二个是参数列表，包含那些没有 - 或 -- 的参数。 Exception getopt.GetoptError在没有找到参数列表，或选项的需要的参数为空时会触发该异常。异常的参数是一个字符串，表示错误的原因。属性 msg 和 opt 为相关选项的错误信息。 示例程序如下: import sys, getopt try: opts, args = getopt.getopt(sys.argv[1:], &quot;hi:o:&quot;, [&quot;inputfile=&quot;,&quot;outputfile=&quot;]) except getopt.GetoptError: print(sys.argv[1], &quot; -i &lt;inputfile&gt; -o &lt;outputfile&gt;&quot;) sys.exit(1) for opt, arg in opts: if opt == &#39;-h&#39;: print(sys.argv[1], &quot; -i &lt;inputfile&gt; -o &lt;outputfile&gt;&quot;) sys.exit(0) elif opt in (&quot;-i&quot;, &quot;--inputfile&quot;): inputfile = arg elif opt in (&quot;-o&quot;, &quot;--outputfile&quot;): outputfile = arg else: print(sys.argv[1], &quot; -i &lt;inputfile&gt; -o &lt;outputfile&gt;&quot;) sys.exit(0) print(&quot;Input File:&quot;, inputfile) print(&quot;Output File:&quot;, outputfile) $ python main.py -i test1.txt -o test2.txt]]></content>
+      <categories>
+        <category>Language</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>语法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[QThread]]></title>
+    <url>%2F2019%2F11%2F18%2FLibs-Qt-2019-11-18-%E8%AE%BE%E7%BD%AEQPushButton%E9%80%8F%E6%98%8E%E8%83%8C%E6%99%AF%2F</url>
+    <content type="text"><![CDATA[通过Qss设置QpushButton背景透明 QPushButton { background-color: transparent; border:none; } 特别注意: 需要加上border属性才有效]]></content>
+      <categories>
+        <category>Libs</category>
+        <category>Qt</category>
+      </categories>
+      <tags>
+        <tag>Qt QPushButton</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[文件系统分区信息错误引起的问题]]></title>
+    <url>%2F2019%2F03%2F02%2FLinux-2019-03-02-%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%88%86%E5%8C%BA%E4%BF%A1%E6%81%AF%E9%94%99%E8%AF%AF%E5%BC%95%E8%B5%B7%E7%9A%84%E9%97%AE%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[问题现象设备断电后重启，内核会出现打印出如下信息,显示存储设备的文件格式有问题。 rootfs: recovering journal JBD2: Invalid checksum recovering block 96256 in log JBD2: Invalid checksum recovering block 96256 in log [ 36.624706] random: nonblocking pool is initialized JBD2: Invalid checksum recovering block 96256 in log JBD2: Invalid checksum recovering block 96256 in log Journal checksum error found in rootfs Pass 1: Checking inodes, blocks, and sizes Pass 2: Checking directory structure Pass 3: Checking directory connectivity Pass 4: Checking reference counts Pass 5: Checking group summary information 问题原因挂载没有指明挂载类型，导致在挂载成功后，操作文件系统可能会损坏原有的文件系统结构信息。 解决方法治标fsck.ext4 -f -y &quot;设备文件&quot; 该命令用于修复文件系统的分区信息 治本在挂载文件系统时，明确指出挂载类型,如在内核启动时指出rootfstype=ext4 参考资料 随手记一下折腾 Gentoo 遇到的两个问题 mount ,mkfs 工具详细说明（ext4,xfs）]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>ISSUE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[动态库路径设置]]></title>
+    <url>%2F2019%2F01%2F26%2FLinux-2019-01-26-%E5%8A%A8%E6%80%81%E5%BA%93%E8%B7%AF%E5%BE%84%E8%AE%BE%E7%BD%AE%2F</url>
+    <content type="text"><![CDATA[1 程序编译链接时程序编译链接时通过向编译器(gcc)传递参数-L &#39;Lib PATH&#39;即可 2 程序运行时Linux动态库(.so)文件在连接（静态库和共享库）和运行（仅限于使用共享库的程序）时被使用，其搜索路径是可以在系统中进行设置的。Linux把/lib和/usr/lib 两个目录作为默认的库搜索路径，所以使用这两个目录中的库时不需要进行设置搜索路径即可直接使用。对于处于默认库搜索路径之外的库，需要将库的位置添加到库的搜索路径之中。设置库文件的搜索路径有以下方式 2.1 库连接配置文件/etc/ld.so.conf将需要搜索的库路径添加到该配置文件即可，如果该文件没有，可自行创建。 2.2 环境变量LD_LIBRARY_PATH向该变量设置库的搜索路径即可，如 LD_LIBRARY_PATH=/home/jake/lib/]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>library</tag>
+        <tag>so</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[qsettings]]></title>
+    <url>%2F2019%2F01%2F08%2FLibs-Qt-2019-01-08-qsettings%2F</url>
+    <content type="text"><![CDATA[自定义保存格式注意事项 保存float到文件时，文件会显示成乱码，所以使用double保存比较好。]]></content>
+      <categories>
+        <category>Libs</category>
+        <category>Qt</category>
+      </categories>
+      <tags>
+        <tag>Qt</tag>
+        <tag>QSetting</tag>
+        <tag>配置</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[修改卷标]]></title>
+    <url>%2F2018%2F12%2F25%2F%E4%BF%AE%E6%94%B9%E5%8D%B7%E6%A0%87%2F</url>
+    <content type="text"><![CDATA[在Linux下可以使用e2label来查看或修改分区卷标。 查看卷标$ sudo e2label /dev/sda1 修改卷标$ sudo e2label /dev/sda1 rootfs 该命令是把/dev/sda1的卷标改为rootfs]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>卷标</tag>
+        <tag>分区</tag>
+        <tag>名称</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[谷歌拼音库接口说明及使用]]></title>
+    <url>%2F2018%2F12%2F19%2FLibs-Qt-2018-12-19-%E8%B0%B7%E6%AD%8C%E6%8B%BC%E9%9F%B3%E5%BA%93%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E%E5%8F%8A%E4%BD%BF%E7%94%A8%2F</url>
+    <content type="text"><![CDATA[接口描述启动解码引擎bool im_open_decoder(const char *fn_sys_dict, const char *fn_usr_dict); fn_sys_dict: 系统字典，可以直接使用谷歌自带的字典dict_pinyin.dat fn_usr_dict: 用户字典，用户自己定义的字典成功启动引擎时接口返回true。 bool im_open_decoder_fd(int sys_fd, long start_offset, long length, const char *fn_usr_dict); 上一个函数的变形。 sys_fd: 系统字典的文件描述符 start_offset: 系统字典文件描述符的偏移位置 length: 系统字典文件读取的长度 fn_usr_dict: 用户字典 关闭解码引擎void im_close_decoder(); 设置输入输出上限void im_set_max_lens(size_t max_sps_len, size_t max_hzs_len); 如果本函数未被调用，则使用默认参数。举例说明该函数的作用，对于显示屏幕大小受限制，显示部件可以只显示确定数量的输入字母来解码， 以及确定数量的中文来显示。如果用户添加一个新字母之母， 输入的所有字母或输出的中文数量超过了设置的上限， 则引擎会不理踩新添加的字母。 max_sps_len: 输入拼音字母的最大长度 max_hzs_len: 解码中文字符的最大长度 清除缓冲void im_flush_cache(); 因为引擎在运行时，为是达到最好的性能，一些数据有保存至内存中，所以有必要时需要清除掉。 搜索size_t im_search(const char* sps_buf, size_t sps_len); 本函数用于搜索匹配字母的候选中文。当要搜索的字母的前缀与先前的搜索字母一样，引擎默认会在先前的搜索结果中进行搜索。如果用户需要开启新的搜索，可以先调用im_reset_search()接口。 sps_buf: 拼音字母 sps_len: 字母长度 返回候选数 删除size_t im_delsearch(size_t pos, bool is_pos_in_splid, bool clear_fixed_this_step); 对当前查找结果执行删除操作， 然后再重新查找。 pos: 拼音字母的位置或者是搜索结果ID is_pos_in_splid: 申明pos参数是字母位置还是搜索结果ID clear_fixed_this_step: 返回候选数量 初始化查找结果void im_reset_search(); 获取输入的拼音字母const char *im_get_sps_str(size_t *decoded_len); decoded_len: 保存返回拼音字母的长度arsed. 返回拼音字母 获取候选字符串char16* im_get_candidate(size_t cand_id, char16* cand_str, size_t max_len); cand_id: 获取候选字符串的ID号，从0开始，通常ID为0是匹配度最高的 cand_str: 用于保存选择字符串的缓冲区 max_len: 缓冲区最大长度 成功返回缓冲区地址cand_str，失败返回NULL.]]></content>
+      <categories>
+        <category>Libs</category>
+        <category>Qt</category>
+      </categories>
+      <tags>
+        <tag>输入法</tag>
+        <tag>pinyinime</tag>
+        <tag>谷歌拼音</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[ssh]]></title>
+    <url>%2F2018%2F12%2F13%2FTool-2018-12-13-ssh%2F</url>
+    <content type="text"><![CDATA[常见问题 ssh配置authorized_keys后仍然需要输入密码的问题]]></content>
+      <categories>
+        <category>Tool</category>
+      </categories>
+      <tags>
+        <tag>ssh</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[vboxbox的linux系统下挂载共享目录]]></title>
+    <url>%2F2018%2F12%2F11%2FTool-2018-12-11-%E5%9C%A8vboxbox%E7%9A%84linux%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%8C%82%E8%BD%BD%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%2F</url>
+    <content type="text"><![CDATA[安装增强功能设置共享目录挂载共享目录sudo mkdir /mnt/shared #创建要挂载的目录 sudo mount -t vboxsf share /mnt/shared #其中share为设置共离目录时的目录名称]]></content>
+      <categories>
+        <category>Tool</category>
+      </categories>
+      <tags>
+        <tag>virtualbox</tag>
+        <tag>share</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[matlablib画曲线]]></title>
+    <url>%2F2018%2F12%2F06%2FLanguage-Python-2018-12-06-matlablib%E7%94%BB%E6%9B%B2%E7%BA%BF%2F</url>
+    <content type="text"><![CDATA[示例先来看看使用matlablib显示一条波形数据的例子 import matplotlib.pyplot as plt import numpy as np x = np.linspace(1, 605, 605) y = np.array([5,9,11,11,9,8,7,5,2,1,3,7,9,9,7,5,5,6,6,6,4,3,4,4,4,4,5,6,5,2,2,2,2,2,2,1,2,2,2,2,2,2,2,1,0,0,1,2,2,1,1,1,1,1,1,2,2,2,2,2,2,2,3,2,2,2,2,2,1,1,1,1,1,1,2,2,1,1,1,1,1,0,1,1,1,0,0,0,0,0,1,1,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]) plt.figure(figsize=(10, 10)) plt.plot(x, y) plt.xlim((1, 605)) plt.ylim((0, 255)) plt.xlabel(&#39;x axis&#39;) plt.ylabel(&#39;y axis&#39;) my_x_ticks = np.arange(1, 605, 50) my_y_ticks = np.arange(0, 255, 10) plt.xticks(my_x_ticks) plt.yticks(my_y_ticks, np.arange(0, 100, 4)) plt.show() plt.close linspacelinspace是用于创建一个一维数组，并且是等差数列构成的一维数组;如: &gt;&gt;&gt; import numpy &gt;&gt;&gt; a = numpy.linspace(1, 10, 10) &gt;&gt;&gt; a array([ 1., 2., 3., 4., 5., 6., 7., 8., 9., 10.]) 这里第一个参数表示起始数值，第二个参数表示终止数值， 第三个参数表示数列个数。其实还有第四个参数endpoint,默认为True，如果该参数设置为False，则输出的数组将不包含终止数值。 figure调用figure能够创建一个用来显示图形输出的一个窗口对象.函数原型 def figure(num=None, figsize=None, dpi=None, facecolor=None, edgecolor=None, frameon=True, FigureClass=Figure, clear=False, **kwargs) num: 整型或字符串，可选，默认为None 如果不设置该参数，创建figure时，Figure号会递增，生成的对象会保存递增后的号码 如果用数字设置该参数，当指定的id号已经生成Figure了，则返回该Figure的索引，则还没有生成，则创建他并返回 如果用字符设置该参数，则将会用该参数设置窗口标题 figsize: 整型数组（元组），可选，默认为None 宽度和长度的单位为英寸，如果不提供该参数，默认会设置为`rc figure.figsize` dpi: 整型，可选，默认为None 窗口的分辨率 facecolor: 背景颜色 edgecolor: 边框颜色 framon: 布尔值，可选，默认为True 设置为`False`时，会停止画Figure帧 FigureClass: matplotlib.figure.Figure的子类可选，用于自定义Figure实例 clear: 布尔值，可选，默认为False设置为`True`且figure对象已经存在时，则对象会被清除 返回值: Figure对象 plot制图 xlim和ylim分别设置当前X轴和Y轴的上限和上限 xlabel和ylabel分别设置当前X轴和Y轴的标题 arange类似于内置函数range()，通过指定开始值、终值和步长创建表示等差数列的一维数组，注意得到的结果数组不包含终值。与linspace是不同， linspace是确定列数。 xticks和yticks 分别获取或设置X轴或Y轴的核度定位和核度标签。在matplotlib中ticks表示的是刻度，而刻度有两层意思，一个是刻度定位(tick locations)，一个是刻度标签(tick labels)。 示例 locs, labels = xticks() #获取定位和标签 xticks(locs, [labels], **kwargs) #设置定位和标签 # 显示x轴的刻标 xticks( arange(6) ) # 显示x轴的刻标以及对应的标签 xticks( arange(5), (&#39;Tom&#39;, &#39;Dick&#39;, &#39;Harry&#39;, &#39;Sally&#39;, &#39;Sue&#39;) ) 此外xticks()还可以传入matplotlib.text.Text类的属性来控制显示的样式 xticks( arange(12), calendar.month_name[1:13], rotation=17 ) 如果不想显示ticks则可以可以传入空的参数如yticks([]) show显示Figure,程序会阻塞在这里，当用户关闭Figure窗口后才会往下执行，退出程序前，记得关闭窗口]]></content>
+      <categories>
+        <category>Language</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>曲线</tag>
+        <tag>matlablib</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[tar打包加密文件]]></title>
+    <url>%2F2018%2F12%2F04%2FLinux-2018-12-04-tar%E6%89%93%E5%8C%85%E5%8A%A0%E5%AF%86%E6%96%87%E4%BB%B6%2F</url>
+    <content type="text"><![CDATA[加密tar -zcvf - test | openssl des3 -salt -k secretpassword | dd of=test.des3 其中： ｀test｀：可以是文件或是文件夹 des3: 为加密算法，可换成其他加密算法 secretpassword： 可以替换成自己要输入的密码 解密dd if=test.des3 | openssl des3 -d -k secretpassword | tar zxf -]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>加密</tag>
+        <tag>tar</tag>
+        <tag>openssl</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[测试驱动开发]]></title>
+    <url>%2F2018%2F12%2F04%2F%E6%B5%8B%E8%AF%95%E9%A9%B1%E5%8A%A8%E5%BC%80%E5%8F%91%2F</url>
+    <content type="text"><![CDATA[测试驱动开发流程1 明确开发需求2 编写测试用例3 编写测试代码4 实现需求功能]]></content>
+      <categories>
+        <category>Essay</category>
+      </categories>
+      <tags>
+        <tag>测试</tag>
+        <tag>驱动</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[psplash]]></title>
+    <url>%2F2018%2F11%2F30%2FLinux-2018-11-30-psplash%2F</url>
+    <content type="text"><![CDATA[代码解析psplashpsplash-write更改显示画面使用说明设置系统启动后，马上执行psplash程序。]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>psplash</tag>
+        <tag>启动界面</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[定义新字“火写“]]></title>
+    <url>%2F2018%2F11%2F30%2F%E5%AE%9A%E4%B9%89%E6%96%B0%E5%AD%97%E2%80%9C%E7%81%AB%E5%86%99%E2%80%9C%2F</url>
+    <content type="text"><![CDATA[##]]></content>
+      <categories>
+        <category>Essay</category>
+      </categories>
+      <tags>
+        <tag>新字</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[制作ubifs文件系统固件]]></title>
+    <url>%2F2018%2F11%2F30%2FLinux-2018-11-30-%E5%88%B6%E4%BD%9Cubifs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%9B%BA%E4%BB%B6%2F</url>
+    <content type="text"><![CDATA[1 安装：mkfs.ubifs工具 $ sudo apt-get install mtd-utils 2 制作ubifs文件系统 $ mkfs.ubifs -r rootfs -m 2048 -e 126976 -c 8191 -o ubifs.img 注： -r:待制作的文件系统目录 -m:NAND FLASH 的最小读写单元,一般为 page size -e:LEB size,对于 AM335x 的 NAND driver,为 block size-2x(page size) -c:文件系统所占用的最大 block 数,一般小于等于 block count -1 -o:输出的 ubifs.img 文件]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>ubifs</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[QCryptographicHash]]></title>
+    <url>%2F2018%2F11%2F29%2FLibs-Qt-2018-11-29-MD5%2F</url>
+    <content type="text"><![CDATA[QCryptographicHash类提供接口来生成密码散列，如生成MD4、MD5、Sha256等等。 生成MD5示例: #include &lt;QCryptographicHash&gt; QByteArray data = create_rand_data(); QByteArray md5 = QCryptographicHash::hash(data, QCryptographicHash::Md5); qDebug() &lt;&lt; &quot;MD5: &quot; &lt;&lt; md5.toHex();]]></content>
+      <categories>
+        <category>Libs</category>
+        <category>Qt</category>
+      </categories>
+      <tags>
+        <tag>加密</tag>
+        <tag>MD5</tag>
+        <tag>解密</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[排序算法]]></title>
+    <url>%2F2018%2F11%2F22%2Falgorithm%2F</url>
+    <content type="text"><![CDATA[资料 “主宰世界”的10种算法短评]]></content>
+      <categories>
+        <category>Essay</category>
+      </categories>
+      <tags>
+        <tag>排序</tag>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[技能的思考]]></title>
+    <url>%2F2018%2F11%2F15%2F%E6%8A%80%E8%83%BD%E7%9A%84%E6%80%9D%E8%80%83%2F</url>
+    <content type="text"><![CDATA[概念技能： 既为个人所拥有的技术能力，可以来实现某种目的。 分类技能可以分为主动式和被动式；主动式既是自己能够主动来使用的技术能力，不需要通过外界来触发；被动式既是需要通过外界事件来触发。 举例需要多学习主动性技能，因为主动性技能具有主控性，自己主导事件的进行。]]></content>
+      <categories>
+        <category>Essay</category>
+      </categories>
+      <tags>
+        <tag>Skill</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[好玩好用的Linux工具]]></title>
+    <url>%2F2018%2F11%2F15%2FTool-2018-11-15-%E5%A5%BD%E7%8E%A9%E5%A5%BD%E7%94%A8%E7%9A%84Linux%E5%B7%A5%E5%85%B7%2F</url>
+    <content type="text"><![CDATA[本文罗列出在使用Linux系统中使用到的好用或好玩的软件工具。 iotop 查看内存和IO负载 systemd-analyze 在使用systemd的系统上看开机速度的 fortune 这个命令会随机输出有趣的话(名言或笑话)。中文版的是fortun-zh cmatrix 从上往下输出无尽的字符串,类似&lt;&lt;黑客帝国&gt;&gt;中的矩阵效果。 toilet 输出由ASCII码组成的艺术字. lolcat 让字符变成彩色的：ls | lolcat dstat 查看系统性能 powertop 查看哪些程序费电 mtr 集成traceroute和ping功能，用于诊断网络 tmux 终端复用软件]]></content>
+      <categories>
+        <category>Tool</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Tools</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[OpenCV]]></title>
+    <url>%2F2018%2F11%2F02%2FLanguage-Python-2018-11-02-opencv%2F</url>
+    <content type="text"><![CDATA[资料 python opencv OpenCV教程]]></content>
+      <categories>
+        <category>Language</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python OpenCV</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[QComboBox设置文字居中]]></title>
+    <url>%2F2018%2F10%2F25%2FLibs-Qt-2018-10-25-QComboBox%E8%AE%BE%E7%BD%AE%E6%96%87%E5%AD%97%E5%B1%85%E4%B8%AD%2F</url>
+    <content type="text"><![CDATA[1 设置显示文字居中可以重新设置LineEdit控件 QLineEdit *lineEdit = new QLineEdit(this); lineEdit-&gt;setReadOnly(true); lineEdit-&gt;setAlignment(Qt::AlignCenter); 2 设置弹出文本居中qobject_cast&lt;QStandardItemModel*&gt;(m_comboBox-&gt;view()-&gt;model())-&gt;item(m_comboBox-&gt;count()-1)-&gt;setTextAlignment(Qt::AlignCenter);]]></content>
+      <categories>
+        <category>Libs</category>
+        <category>Qt</category>
+      </categories>
+      <tags>
+        <tag>QComboBox Qt</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Web]]></title>
+    <url>%2F2018%2F10%2F12%2FWeb%2F</url>
+    <content type="text"><![CDATA[Resource w3cshools bootcdn: search the cdn address of front-project]]></content>
+      <categories>
+        <category>Essay</category>
+      </categories>
+      <tags>
+        <tag>Web</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Qt OpenGL开发]]></title>
+    <url>%2F2018%2F09%2F19%2FLibs-Qt-2018-09-19-OpenGL%2F</url>
+    <content type="text"><![CDATA[资料 OpenGL ES总结 OpenGL ES 2.0 Shader总结]]></content>
+      <categories>
+        <category>Libs</category>
+        <category>Qt</category>
+      </categories>
+      <tags>
+        <tag>Qt OpenGL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Qt事件机制]]></title>
+    <url>%2F2018%2F09%2F03%2FLibs-Qt-2018-09-03-%E4%BA%8B%E4%BB%B6%E6%9C%BA%E5%88%B6%2F</url>
+    <content type="text"><![CDATA[事件机制的传递是从子部件传递到父部件，比如下面这段代码 class Widget2 : public QWidget { public: Widget2(QWidget *parent): QWidget(parent) {} bool event(QEvent *e) { qDebug(&quot;%s[%d]&quot;, __func__, __LINE__; return QWidget::event(e); } }; class Widget1 : public QWidget { public: Widget1(QWidget *parent) bool event(QEvent *e) { qDebug(&quot;%s[%d]&quot;, __func__, __LINE__; } private: Widget1 m_subWidget; }; Widget::Widget(QWidget *parent) : QWidget(parent), m_subWidget(new Widget2(this)) { } 用户点击该部件时，Widget2会先触发事件然后调用event函数， 最后Widget1再接收到事件并调用event函数]]></content>
+      <categories>
+        <category>Libs</category>
+        <category>Qt</category>
+      </categories>
+      <tags>
+        <tag>Qt</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[C++资源]]></title>
+    <url>%2F2018%2F08%2F29%2FLanguage-CXX-2018-08-29-C-%E8%B5%84%E6%BA%90%2F</url>
+    <content type="text"><![CDATA[C++各种框架及库 Awesome C++ Awesome Qt]]></content>
+      <categories>
+        <category>Language</category>
+        <category>CXX</category>
+      </categories>
+      <tags>
+        <tag>resource</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[道德经]]></title>
+    <url>%2F2018%2F08%2F22%2F%E9%81%93%E5%BE%B7%E7%BB%8F%2F</url>
+    <content type="text"><![CDATA[道 道可道，非常道。名可名，非常名。无名天地之始。有名万物之母。故常无欲以观其妙。常有欲以观其徼。此两者同出而异名，同谓之玄。玄之又玄，众妙之门。 天下皆知美之为美，斯恶矣；皆知善之为善，斯不善已。故有无相生，难易相成，长短相形，高下相倾，音声相和，前后相随。是以圣人处不为之事，行不言之教。万物作焉而不辞。生而不有，为而不恃，功成而弗居。夫唯弗居，是以不去。 不尚贤，使民不争。不贵难得之货，使民不为盗。不见可欲，使民心不乱。是以圣人之治，虚其心，实其腹，弱其志，强其骨；常使民无知、无欲，使夫智者不敢为也。为无为，则无不治。 德*]]></content>
+      <categories>
+        <category>Essay</category>
+      </categories>
+      <tags>
+        <tag>道德经</tag>
+        <tag>道</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Atom编辑器]]></title>
+    <url>%2F2018%2F08%2F14%2FTool-2018-08-14-atom%2F</url>
+    <content type="text"><![CDATA[1 使用技巧2 插件 minimap: 预览屏，可以了解当前相处的相对位置 platformio-ide-terminal: 控制台插件 atom beautify: 格式风代码风格 markdown-priview-enhanced: 增强版Markdown插件，支持画流程图、数学公式，以及导出各种文件 remote-sync: 同步远程文件 3 资源]]></content>
+      <categories>
+        <category>Tool</category>
+      </categories>
+      <tags>
+        <tag>Atom</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[C/C++小技巧]]></title>
+    <url>%2F2018%2F08%2F11%2FLanguage-CXX-2018-08-11-%E5%B0%8F%E6%8A%80%E5%B7%A7%2F</url>
+    <content type="text"><![CDATA[1 宏1.1 ‘#’和’##’/* “#”符号把一个符号直接转换为字符串 */ #define STRING(x) #x const char *str = STRING(MESSAGE) /* &quot;##&quot;符号会连接两个符号，从而产生新的符号(词法层次) */ #define SIGN( x ) INT_##x int SIGN( 1 ); // 输出内容为INT_1 算法计算二进制1的个数int count(int num) { int count=0; while(num) { count++; num&amp;=(num-1); } return count; } 数据交换/* C style */ #define swap(a, b) { \ a ^= b; \ b ^= a; \ a ^= b; \ } /* C++ style */ inline void swap(int &amp;a, int &amp;b) { a ^= b; b ^= a; a ^= b; }]]></content>
+      <categories>
+        <category>Language</category>
+        <category>CXX</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[资源备忘录]]></title>
+    <url>%2F2018%2F08%2F10%2F%E8%B5%84%E6%BA%90%2F</url>
+    <content type="text"><![CDATA[书籍 免费的计算机编程中文书籍 开源图标 谷歌开源图标 网站 云盘精灵 爱搜资源]]></content>
+      <categories>
+        <category>Essay</category>
+      </categories>
+      <tags>
+        <tag>resources</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Qt常见问题]]></title>
+    <url>%2F2018%2F07%2F31%2FLibs-Qt-2018-07-31-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[新版本QWebEngine需要安装LIBDBUS库问题在libdbus官网上下载源码编译，并重新指定libdbus库的路径 QMenu第一次调用height接口返回的不是真实高度，要QMenu显示第二次时才返回真实高度解决： 直接调用sizeHint().height()接口即可 QPainter缩放导致QpainterPath的X轴和Y轴的显示线宽不一致painter.scale(0.5, 2); painter.setPath(path); 编译库项目时，只生成dll文件，没有lib文件解决: 确认类声明为导出，检查*_global.h文件]]></content>
+      <categories>
+        <category>Libs</category>
+        <category>Qt</category>
+      </categories>
+      <tags>
+        <tag>Qt FAQ</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[调试打印机制]]></title>
+    <url>%2F2018%2F07%2F05%2FLibs-Qt-2018-07-05-%E8%B0%83%E8%AF%95%E6%89%93%E5%8D%B0%E6%9C%BA%E5%88%B6%2F</url>
+    <content type="text"><![CDATA[1 调试打印函数 函数名 描述 qDebug() 用于打印自定义调试信息 qInfo() 用于打印信息 qWarning() 用于打印警告信息和获取错误 qCritical() 用于打印严重错误信息和报告系统错误 qFatal() 用于打印致命错误信息，并退出程序 2 自定义信息输出格式默认情况下，这些函数会将信息输出到默认终端。 使用“QT_MESSAGE_PATTERN”环境变量可以指定输出信息的格式，例如“QT_MESSAGE_PATTERN=”[%{type}] %{appname} (%{file}:%{line}) - %{message}”,除了设置该环境变量之外，也可以使用”qSetMessagePattern()“函数来设置。 3 自定义信息处理函数使用qinstallMessageHandler()可以来设置调试打印函数的处理函数，示例如下： #include &lt;QCoreApplication&gt; #include &lt;QDebug&gt; #include &lt;QFile&gt; #include &lt;QTextStream&gt; void customMessageHandler(QtMsgType type, const QMessageLogContext &amp;context, const QString &amp;msg) { QString txt; switch (type) { //调试信息提示 case QtDebugMsg: txt = QString(&quot;Debug: %1&quot;).arg(msg); break; //一般的warning提示 case QtWarningMsg: txt = QString(&quot;Warning: %1&quot;).arg(msg); break; //严重错误提示 case QtCriticalMsg: txt = QString(&quot;Critical: %1&quot;).arg(msg); break; //致命错误提示 case QtFatalMsg: txt = QString(&quot;Fatal: %1&quot;).arg(msg); abort(); /*这里程序异常退出*/ } QFile outFile(&quot;debuglog.txt&quot;); outFile.open(QIODevice::WriteOnly | QIODevice::Append); QTextStream ts(&amp;outFile); ts &lt;&lt;context.file&lt;&lt;&quot;:&quot;&lt;&lt;context.line&lt;&lt;&quot;-fun-&quot;&lt;&lt;context.function&lt;&lt;txt &lt;&lt; endl; } int main(int argc, char *argv[]) { QCoreApplication a(argc, argv); //先注册自己的MsgHandler qInstallMessageHandler(customMessageHandler); //以后就可以像下面这样直接打日志到文件中，而且日志也会包含时间信息 qDebug(&quot;This is a debug message, Hello %s&quot;, &quot;jake&quot;); qWarning(&quot;This is a warning message!!&quot;); qCritical(&quot;This is a critical message!&quot;); qFatal(&quot;This is a fatal message!!&quot;); return a.exec(); } 如果“QT_FATAL_WARNINGS”环境变量被设置，那qWarning()会在输出信息后退出程序。在默认情况下，如果不想某个打印函数输出信息，可以编译时定义如下对应的宏，”QT_NO_DEBUG_OUPUT, QT_NO_INFO_OUPUT, QT_NO_WARNING_OUPUT“]]></content>
+      <categories>
+        <category>Libs</category>
+        <category>Qt</category>
+      </categories>
+      <tags>
+        <tag>Qt Debug</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Doxygen自动生成文档工具]]></title>
+    <url>%2F2018%2F05%2F17%2FLibs-Qt-2018-05-17-Doxygen%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E6%96%87%E6%A1%A3%E5%B7%A5%E5%85%B7%2F</url>
+    <content type="text"><![CDATA[参考 安装doxygen(一个自动文档生成工具)]]></content>
+      <categories>
+        <category>Libs</category>
+        <category>Qt</category>
+      </categories>
+      <tags>
+        <tag>Qt Tool Doxygen</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Qt程序发布]]></title>
+    <url>%2F2018%2F04%2F25%2FLibs-Qt-2018-04-25-Qt%E7%A8%8B%E5%BA%8F%E5%8F%91%E5%B8%83%2F</url>
+    <content type="text"><![CDATA[Windows系统发布 启动Qt for Desktop cmd, 进入命令行 进入要发布的程序目录，然后运行windeployqt test.ext 使用qt-installer-framework制作安装程序发布版，参考http://www.tuicool.com/articles/zaq6Zf2]]></content>
+      <categories>
+        <category>Libs</category>
+        <category>Qt</category>
+      </categories>
+      <tags>
+        <tag>Qt Release</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[ASCII码表]]></title>
+    <url>%2F2018%2F04%2F18%2FASCII%2F</url>
+    <content type="text"><![CDATA[ASCII码表ASCII码大致可以分作三部分組成: ASCII非打印控制字符； ASCII打印字符； 扩展ASCII打印字符。 1 ASCII非打印控制字符表ASCII表上的数字0–31分配给了控制字符，用于控制像打印机等一些外围设备。例如，12代表换页/新页功能。此命令指示打印机跳到下一页的开头。（参详ASCII码表中0-31） 2 ASCII打印字符数字 32–126 分配给了能在键盘上找到的字符，当您查看或打印文档时就会出现。数字127代表 DELETE 命令。（参详ASCII码表中32-127）ASCII码表 0-127 Bin Dec Hex 缩写/字符 解释 00000000 0 00 NUL(null) 空字符 00000001 1 01 SOH(start of headling) 标题开始 00000010 2 02 STX (start of text) 正文开始 00000011 3 03 ETX (end of text) 正文结束 00000100 4 04 EOT (end of transmission) 传输结束 00000101 5 05 ENQ (enquiry) 请求 00000110 6 06 ACK (acknowledge) 收到通知 00000111 7 07 BEL (bell) 响铃 00001000 8 08 BS (backspace) 退格 00001001 9 09 HT (horizontal tab) 水平制表符 00001010 10 0A LF (NL line feed, new line) 换行键 00001011 11 0B VT (vertical tab) 垂直制表符 00001100 12 0C FF (NP form feed, new page) 换页键 00001101 13 0D CR (carriage return) 回车键 00001110 14 0E SO (shift out) 不用切换 00001111 15 0F SI (shift in) 启用切换 00010000 16 10 DLE (data link escape) 数据链路转义 00010001 17 11 DC1 (device control 1) 设备控制1 00010010 18 12 DC2 (device control 2) 设备控制2 00010011 19 13 DC3 (device control 3) 设备控制3 00010100 20 14 DC4 (device control 4) 设备控制4 00010101 21 15 NAK (negative acknowledge) 拒绝接收 00010110 22 16 SYN (synchronous idle) 同步空闲 00010111 23 17 ETB (end of trans. block) 传输块结束 00011000 24 18 CAN (cancel) 取消 00011001 25 19 EM (end of medium) 介质中断 00011010 26 1A SUB (substitute) 替补 00011011 27 1B ESC (escape) 溢出 00011100 28 1C FS (file separator) 文件分割符 00011101 29 1D GS (group separator) 分组符 00011110 30 1E RS (record separator) 记录分离符 00011111 31 1F US (unit separator) 单元分隔符 00100000 32 20 (space) 空格 00100001 33 21 ! 00100010 34 22 “ 00100011 35 23 # 00100100 36 24 $ 00100101 37 25 % 00100110 38 26 &amp; 00100111 39 27 ‘ 00101000 40 28 ( 00101001 41 29 ) 00101010 42 2A * 00101011 43 2B + 00101100 44 2C , 00101101 45 2D - 00101110 46 2E . 00101111 47 2F / 00110000 48 30 0 00110001 49 31 1 00110010 50 32 2 00110011 51 33 3 00110100 52 34 4 00110101 53 35 5 00110110 54 36 6 00110111 55 37 7 00111000 56 38 8 00111001 57 39 9 00111010 58 3A : 00111011 59 3B ; 00111100 60 3C &lt; 00111101 61 3D = 00111110 62 3E &gt; 00111111 63 3F ? 01000000 64 40 @ 01000001 65 41 A 01000010 66 42 B 01000011 67 43 C 01000100 68 44 D 01000101 69 45 E 01000110 70 46 F 01000111 71 47 G 01001000 72 48 H 01001001 73 49 I 01001010 74 4A J 01001011 75 4B K 01001100 76 4C L 01001101 77 4D M 01001110 78 4E N 01001111 79 4F O 01010000 80 50 P 01010001 81 51 Q 01010010 82 52 R 01010011 83 53 S 01010100 84 54 T 01010101 85 55 U 01010110 86 56 V 01010111 87 57 W 01011000 88 58 X 01011001 89 59 Y 01011010 90 5A Z 01011011 91 5B [ 01011100 92 5C \ 01011101 93 5D ] 01011110 94 5E ^ 01011111 95 5F _ 01100000 96 60 ` 01100001 97 61 a 01100010 98 62 b 01100011 99 63 c 01100100 100 64 d 01100101 101 65 e 01100110 102 66 f 01100111 103 67 g 01101000 104 68 h 01101001 105 69 i 01101010 106 6A j 01101011 107 6B k 01101100 108 6C l 01101101 109 6D m 01101110 110 6E n 01101111 111 6F o 01110000 112 70 p 01110001 113 71 q 01110010 114 72 r 01110011 115 73 s 01110100 116 74 t 01110101 117 75 u 01110110 118 76 v 01110111 119 77 w 01111000 120 78 x 01111001 121 79 y 01111010 122 7A z 01111011 123 7B { 01111100 124 7C &#124; 01111101 125 7D } 01111110 126 7E ~ 01111111 127 7F DEL (delete) 删除 3 扩展ASCII打印字符扩展的ASCII字符满足了对更多字符的需求。扩展的ASCII包含ASCII中已有的128个字符（数字0–32显示在下图中），又增加了128 个字符，总共是256个。即使有了这些更多的字符，许多语言还是包含无法压缩到256个字符中的符号。因此，出现了一些ASCII的变体来囊括地区性字符 和符号。例如，许多软件程序把ASCII表（又称作ISO8859-1）用于北美、西欧、澳大利亚和非洲的语言。]]></content>
+      <categories>
+        <category>Essay</category>
+      </categories>
+      <tags>
+        <tag>ASCII</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[有名管道]]></title>
+    <url>%2F2018%2F04%2F13%2FLinux-2018-04-13-%E6%9C%89%E5%90%8D%E7%AE%A1%E9%81%93%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux 有名管道</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Core Dump文件的产生和使用]]></title>
+    <url>%2F2018%2F04%2F09%2FLinux-2018-04-09-Core-Dump%E6%96%87%E4%BB%B6%E7%9A%84%E4%BA%A7%E7%94%9F%E5%92%8C%E4%BD%BF%E7%94%A8%2F</url>
+    <content type="text"><![CDATA[简介 core dump文件是记录某个进程在某个时间点上的镜像。该时间点可能是程序的执行出错时候，也可能是某个随机的时间点。 1 测试环境 $uname -a linux dev 2.4.21-9.30AXsmp #1 SMP Wed May 26 23:37:09 EDT 2004 i686 i686 i386 GNU/Linux 2 查看默认limit $ ulimit -a core file size (blocks, -c) 0 data seg size (kbytes, -d) unlimited file size (blocks, -f) unlimited max locked memory (kbytes, -l) 4 max memory size (kbytes, -m) unlimited open files (-n) 2048 pipe size (512 bytes, -p) 8 stack size (kbytes, -s) 10240 cpu time (seconds, -t) unlimited max user processes (-u) 7168 virtual memory (kbytes, -v) unlimited 从结果可以看到默认的core file size为0 ，也就是说，默认是不会产生core文件。 3 设置core dump文件大小可以通过以下命令来设置core文件大小 $ ulimit -c 1024 $ ulimit -a core file size (blocks, -c) 1024 data seg size (kbytes, -d) unlimited file size (blocks, -f) unlimited max locked memory (kbytes, -l) 4 max memory size (kbytes, -m) unlimited open files (-n) 2048 pipe size (512 bytes, -p) 8 stack size (kbytes, -s) 10240 cpu time (seconds, -t) unlimited max user processes (-u) 7168 virtual memory (kbytes, -v) unlimited 4 设置core dump文件名默认情况下，产生的core dump文件名为“core”。如果想设置core dump的文件名，可以通过修改“/proc/sys/kernel/core_pattern”和“/proc/sys/kernel/core_uses_pid”文件内容来达到该目的。设置方法如下： echo &quot;pattern&quot; &gt; /proc/sys/kernel/core_pattern echo &quot;[0|1]&quot; &gt; /proc/sys/kernel/core_uses_pid 其中“core_pattern”是设置core dump文件名的规则，规则如下：|规则符号|解释||—|—||%%|%||%p|||%u|||%g|||%s|导致dump的信号的数字||%t| dump的时间戳||%h|hostname||%e|执行文件的名称| 而“core_uses_pid”是为了向后兼容，用于设置是否在core file的末尾加上“%p”，“1”为是。我设置的“core_pattern”内容如下: $cat /proc/sys/kernel/core_pattern core.%p 这里设置在core后面加上进程pid，通过设置“core_uses_pid”也可以达到这个效果。 5 程序异常产生core dump文件代码如下: #include &lt;stdio.h&gt; #include &lt;unistd.h&gt; void create_dump(void) { if ( 0 == fork() ){ char *p=0; *p = &#39;O&#39;; } } int main(int argc, const char *argv[]) { int i; for (i = 1; i &lt; 100; ++i) { sleep(1); printf(&quot;i(%03d)\n&quot;,i); if ( 0 == i%11 ) create_dump(); } return 0; } 这里通过“create_dump()”函数生成的子进程来产生core dump文件，这样做的好处是不会导致原先进程挂死，而且可用create_dump()来生成程序在某一时刻的镜像。子进程是利用设置非法指针来产生异常的。编译该代码，并执行 [10:17:01 core_dump]$gcc -g main.c -o create_core [10:17:24 core_dump]$ls create_core main.c Makefile [10:17:28 core_dump]$./create_core i(001) i(002) i(003) i(004) i(005) i(006) i(007) i(008) i(009) i(010) i(011) ^C [10:17:50 core_dump]$ls core.4787 create_core main.c Makefile [10:17:51 core_dump]$ 这里已经生成一个名“core.4787“的core dump文件 6 利用abort()产生core dump文件将上一节的“create_file()”函数中的使用非法指针操作换成“abort（）”就行了，代码如下： ＃include &lt;stdlib.h&gt; void create_dump(void) { if ( 0 == fork() ){ #if 0 char *p=0; *p =1; #else abort(); #endif } } 操作方法与上一节一样。 7 利用gdb工具产生core dump文件gdb调试工具使用“attach”可以连接指定的已运行进程，并且gdb可以对它调试的程序生成那个时刻的core dump文件。这里写个小程序进行测试，小程序代码如下： /*main.c*/ ＃include &lt;stdio.h&gt; #include &lt;unistd.h&gt; int main(int argc, char **argv) { int i=0; while(1) { sleep(1); ++i; } } 下面是具体的操作步骤： [10:52:23 demo]$gcc -g main.c -o test [10:52:34 demo]$./test &amp; [2] 5419 [10:52:37 demo]$sudo gdb GNU gdb (Ubuntu/Linaro 7.4-2012.04-0ubuntu2.1) 7.4-2012.04 Copyright (C) 2012 Free Software Foundation, Inc. License GPLv3+: GNU GPL version 3 or later This is free software: you are free to change and redistribute it. There is NO WARRANTY, to the extent permitted by law. Type &quot;show copying&quot; and &quot;show warranty&quot; for details. This GDB was configured as &quot;i686-linux-gnu&quot;. For bug reporting instructions, please see: . (gdb) attach 5419 Attaching to process 5419 Reading symbols from /home/jake/apps/c/src/demo/test...done. Reading symbols from /lib/i386-linux-gnu/libc.so.6...(no debugging symbols found)...done. Loaded symbols for /lib/i386-linux-gnu/libc.so.6 Reading symbols from /lib/ld-linux.so.2...(no debugging symbols found)...done. Loaded symbols for /lib/ld-linux.so.2 0xb77b3424 in __kernel_vsyscall () (gdb) gcore core.5419 Saved corefile core.5419 (gdb) q A debugging session is active. Inferior 1 [process 5419] will be detached. Quit anyway? (y or n) y Detaching from program: /home/jake/apps/c/src/demo/test, process 5419 [10:53:57 demo]$ls core.5419 main.c test 这里可以看到已经生成“core.5419”文件，这里gdb操作需要root权限！ 8 利用gcore工具产生core dump文件gcore工具可直接对指定的进程生成那个时间点的core dump文件,其实gcore工具是对第７节的gdb使用操作进行的封装。使用格式如下： gcore [-o filename] pid 其中“-o filename”指定生成core dump文件的名字，不指定的话，使用系统配置的。这里使用第７节的小程序进行测试，具体操作如下： [10:35:31 demo]$./test &amp; [1] 5042 [10:35:36 demo]$sudo gcore 5042 0xb77b6424 in __kernel_vsyscall () Saved corefile core.5042 [10:35:47 demo]$ls core.5042 main.c test [10:35:49 demo]$ gcore工具需要使用root权限执行，可以看到这里生成一个“core.5042”文件。 9 使用gdb分析core dump文件这里选择对第５节产生的core dump文件进行分析。其具体操作如下： [11:02:14 core_dump]$gdb ./core_dump GNU gdb (Ubuntu/Linaro 7.4-2012.04-0ubuntu2.1) 7.4-2012.04 Copyright (C) 2012 Free Software Foundation, Inc. License GPLv3+: GNU GPL version 3 or later This is free software: you are free to change and redistribute it. There is NO WARRANTY, to the extent permitted by law. Type &quot;show copying&quot; and &quot;show warranty&quot; for details. This GDB was configured as &quot;i686-linux-gnu&quot;. For bug reporting instructions, please see: ... Reading symbols from /home/jake/apps/c/src/core_dump/core_dump...done. (gdb) core-file core.5575 [New LWP 5575] warning: Can&#39;t read pathname for load map: Input/output error. Core was generated by `./core_dump&#39;. Program terminated with signal 11, Segmentation fault. #0 0x0804845d in create_dump () at main.c:10 10 *p =1; (gdb) bt #0 0x0804845d in create_dump () at main.c:10 #1 0x080484c4 in main (argc=1, argv=0xbfb89ac4) at main.c:24 (gdb) frame 1 #1 0x080484c4 in main (argc=1, argv=0xbfb89ac4) at main.c:24 24 create_dump(); (gdb) print i $1 = 11 (gdb) l 10 5 void create_dump(void) 6 { 7 if ( 0 == fork() ){ 8 #if 1 9 char *p=0; 10 *p =1; 在第１８行可以看到，程序执行到“＊p=1”时出现错误，这时通过第２７行的操作，打印出附近的代码，发现原来是对０地址的赋值而引起的异常。同时通过第２５行“print i”打印，发现确实”i=11”时执行的操作。 add358.blog.chinaunix.net]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Core Linux Dump</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[多国语言翻译]]></title>
+    <url>%2F2018%2F03%2F16%2FLibs-Qt-2018-03-16-%E5%A4%9A%E5%9B%BD%E8%AF%AD%E8%A8%80%E7%BF%BB%E8%AF%91%2F</url>
+    <content type="text"><![CDATA[1 修改工程文件在工程文件”pro/pri”中加入翻译源文件hello_world.ts TRANSLATIONS += \ Resource/translations/hello_world.ts 写代码时需要注意下面两点： • 源码用 utf-8 字符集 • 源码中需要翻译的字符串必须用英文(不能有中文或其它语言），且需要用 tr() 函数。 例如： QMessageBox::information(this,tr(&quot;Information&quot;),tr(&quot;Hello world.&quot;)); 2 更新翻译源文件 使用QtCreaor集成开发环境来更新翻译源文件，具体步骤:工具 -&gt; 外部 -&gt; qt 语言家 -&gt; 更新翻译（lupdtae） 工具lupdate自动分析工程文件.pro/pri，找到翻译源文件hello_world.ts；然后会分析源码中包含在 tr 中的字符串，写入到翻译源文件 hello_world.ts 中。翻译源文件是一个xml 文件。 &lt;context&gt; &lt;name&gt;Hello&lt;/name&gt; &lt;message&gt; &lt;location filename=&quot;HelloWorld.ui&quot; line=&quot;14&quot;/&gt; &lt;source&gt;Frame&lt;/source&gt; &lt;translation type=&quot;unfinished&quot;&gt;&lt;/translation&gt; &lt;/message&gt; &lt;/context&gt; 3 修改翻译源文件 hello_world.ts• 可以直接编辑翻译源文件进行翻译 • 可以用工具 linguist 进行翻译 4 在代码中加载需要的翻译资源文件4.1. 把翻译资源文件放到程序的资源文件中 把翻译资源文件放到程序的资源文件中后，就会被当做程序的资源编译进程序中。所以访问翻译资源文件的方式与其它资源的访问方式相同。即：“:/translat/hello_world.qm” 。 用“:/”来指定是从资源中加载。 例如： //本地化程序资源 QTranslator myappTranslator; //把翻译文件放在了程序资源中 myappTranslator.load(&quot;:/translations/hello_world.qm&quot;); qApp-&gt;installTranslator(&amp;myappTranslator); 4.2. 从翻译资源文件中直接加载 //本地化程序资源 QTranslator myappTranslator; //把翻译文件放在了程序资源中 myappTranslator.load(&quot;C:/translations/hello_world.qm&quot;); qApp-&gt;installTranslator(&amp;myappTranslator); 5 编译 工具 -&gt; 外部 -&gt; qt 语言家 -&gt; 更新翻译（lrelease） 翻译完源文件后，需要编译工具（lrelease）把源文件编译成资源文件 hello_world.qm 。 6 qt 资源 qt 翻译资源在安装目录下的 translate 目录下。 7 在程序中做翻译菜单 当语言进行切换时，需要调用 ui-&gt;retranslateUi(this); 更新主窗口。 如果非主窗口，则这个函数会触发 void changeEvent(QEvent *e) 事件。 例如： void CHelloWorld::changeEvent(QEvent *e) { LOG_MODEL_DEBUG(&quot;MainWindow&quot;, &quot;MainWindow::changeEvent.e-&gt;type:%d&quot;, e-&gt;type()); switch(e-&gt;type()) { case QEvent::LanguageChange: ui-&gt;retranslateUi(this); break; } } 参考资料• 《Qt多国语言QT_TR_NOOP和QT_TRANSLATE_NOOP》]]></content>
+      <categories>
+        <category>Libs</category>
+        <category>Qt</category>
+      </categories>
+      <tags>
+        <tag>translate 语言</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[各Qt版本区别]]></title>
+    <url>%2F2018%2F03%2F14%2FLibs-Qt-2018-03-14-%E5%90%84%E7%89%88%E6%9C%AC%E5%8C%BA%E5%88%AB%2F</url>
+    <content type="text"><![CDATA[低版本WebKit移植到高版本WebEnginehttp://doc.qt.io/qt-5/qtwebenginewidgets-qtwebkitportingguide.html]]></content>
+      <categories>
+        <category>Libs</category>
+        <category>Qt</category>
+      </categories>
+      <tags>
+        <tag>Qt 版本</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[将进酒]]></title>
+    <url>%2F2018%2F02%2F27%2F%E5%B0%86%E8%BF%9B%E9%85%92%2F</url>
+    <content type="text"><![CDATA[将进酒 李白 君不见 黄河之水天上来 奔流到海不复回 君不见 高堂明镜悲白发 朝如青丝暮成雪 人生得意须尽欢 莫使金樽空对月 天生我材必有用 千金散去还复来 烹羊宰牛且为乐 会须一饮三百杯 岑夫子 丹丘生 将进酒 杯莫停 与君歌一曲 请君为我倾耳听 钟鼓馔玉不足贵 但愿长醉不复醒 古来圣贤皆寂寞 惟有饮者留其名 陈王昔时宴平乐 斗酒十千恣欢谑 主人何为言少钱 径须沽取对君酌 五花马 千金裘 呼儿将出换美酒 与尔同销万古愁]]></content>
+      <categories>
+        <category>Essay</category>
+      </categories>
+      <tags>
+        <tag>诗</tag>
+        <tag>李白</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Githook]]></title>
+    <url>%2F2018%2F02%2F01%2FTool-2018-02-01-githook%2F</url>
+    <content type="text"><![CDATA[GithookGithook是在Git仓库中当特定事件发生时自动运行的脚本，通过该机制可以让我们自定义Git内部的行为方式，如获取程序版本号、代码风格检查等；Githook分为客户端Hook和服务端Hook，客户端Hook即在客户端上运行的脚本，服务端hook即在服务端上运行的脚本。Githook是存放在仓库的hooks目录下，默认情况下该目录会有些以.sample结尾的示例文件，如果要让自己的脚本能够被运行，则不能带有后缀名。 客户端Hook服务端Hook参考资料 使用 Githook 实现团队 Coding Review 流程]]></content>
+      <categories>
+        <category>Tool</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>hooks</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Sed使用]]></title>
+    <url>%2F2018%2F01%2F31%2FLanguage-Shell-2018-01-31-Sed%E4%BD%BF%E7%94%A8%2F</url>
+    <content type="text"><![CDATA[替换文件中匹配的字符串sed -i &#39;s/source_text/target_text/g&#39; file1]]></content>
+      <categories>
+        <category>Language</category>
+        <category>Shell</category>
+      </categories>
+      <tags>
+        <tag>Sed Shell</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[QSS]]></title>
+    <url>%2F2017%2F11%2F30%2FLibs-Qt-2017-11-30-QSS%2F</url>
+    <content type="text"><![CDATA[1 QSS概述QSS(Qt Style Sheets)是Qt的样式表,为Qt提供许多的属性、伪状态、子控件等机制来自定义控件的外观,与HTML中的CSS类似. 2 使用方法2.1 在Qt Designer中设置stylesheet2.2 在代码中调用控制的stylesheet()接口来设置样式2.3 将QSS内容保存到文件中，通过代码读取该文件内容。void MainWindow::load_style_sheet(const QString &amp;fileName) { QFile file(fileName); if(file.open(QFile::ReadOnly)) { qApp-&gt;setStyleSheet(file.readAll()); file.close(); } } 2.4 使用命令行参数”-stylesheet”来指定要加载的QSS文件./QtDemo -stylesheet test.qss 3 语法规则QSS的语法规则与CSS类型。 4 选择器类型 选择器类型 举例 说明 通配选择器 * 匹配所有控件 类型选择器 QPushButton 匹配所有QPushButton和其子类的对象 属性选择器 QPushButton[flat=”flase”] 匹配所有属性flat的值为flase的QPushButton类型对象 类选择器 .QPushButton 匹配所有QPushButton的对象,但是不匹配其子类的对象 ID选择器 #myBtn 匹配所有ID为myBtn的控件对象,此ID为对象的objectName属性 后代选择器 QDialog QPushButton 所有QDialog容器中包含QPushButton类型的对象,不管直接或间接包含 子选择器 QDialog &gt; QPushButton 所有QDialog容器下所有QPushButton对象,必须是直接包含 以上选择器可以联合使用,并且支持一次设置多个选择器类型,用逗号隔开,如#object1,#object2,#object3表示所有这个ID使用同个规则;QDialog #object1表示选择所有QDialog下所有ID为object1的对象. 5 属性在QSS中设置的属性分为两种: 样式表的属性, 如border、border-radius、background-color等属性，即为CSS标准的一部分属性 QObject系统的属性，如QLable::alignment、QLabel::text、QLabel::wordWrap等属性，即在QObject框架中使用“Q_PROPERTY”申明的属性。 在设置QSS时，不仅可以设置样式表属性，也可以设置QObject定义的属性，设置QOjbect属性时，需要在属性名前面加上”qproperty-“。比如要设置QLabel::alignment属性时在QSS中需要写成qproperty-alignment，如果属性有多个值组成，需要将这个值用单引号和双引号括起来。 以下是使用QSS属性和QObject属性的示例。 QLabel { border-radius: 3px; background-color: white; qproperty-alignment: AlignCenter; /*或者是 &quot;AlignHCenter|AlignVCenter&quot;*/ qproperty-text:&#39;This is a Text Mesage&#39;; } 6 子控件7 伪状态 伪状态 描述 :active 部件存于激活的窗口时，该状态有效 :adjoins-item This state is set when the ::branch of a QTreeView is adjacent to an item. :alternate This state is set for every alternate row whe painting the row of a QAbstractItemView when QAbstractItemView::alternatingRowColors() is set to true. :bottom The item is positioned at the bottom. For example, a QTabBar that has its tabs positioned at the bottom. :checked The item is checked. For example, the checked state of QAbstractButton. :closable The items can be closed. For example, the QDockWidget has the QDockWidget::DockWidgetClosable feature turned on. :closed The item is in the closed state. For example, an non-expanded item in a QTreeView :default The item is the default. For example, a default QPushButton or a default action in a QMenu. :disabled The item is disabled. :editable The QComboBox is editable. :edit-focus The item has edit focus (See QStyle::State_HasEditFocus). This state is available only for Qt Extended applications. :enabled The item is enabled. :exclusive The item is part of an exclusive item group. For example, a menu item in a exclusive QActionGroup. :first The item is the first (in a list). For example, the first tab in a QTabBar. :flat The item is flat. For example, a flat QPushButton. :floatable The items can be floated. For example, the QDockWidget has the QDockWidget::DockWidgetFloatable feature turned on. :focus The item has input focus. :has-children The item has children. For example, an item in a QTreeView that has child items. :has-siblings The item has siblings. For example, an item in a QTreeView that siblings. :horizontal The item has horizontal orientation :hover The mouse is hovering over the item. :indeterminate The item has indeterminate state. For example, a QCheckBox or QRadioButton is partially checked. :last The item is the last (in a list). For example, the last tab in a QTabBar. :left The item is positioned at the left. For example, a QTabBar that has its tabs positioned at the left. :maximized The item is maximized. For example, a maximized QMdiSubWindow. :middle The item is in the middle (in a list). For example, a tab that is not in the beginning or the end in a QTabBar. :minimized The item is minimized. For example, a minimized QMdiSubWindow. :movable The item can be moved around. For example, the QDockWidget has the QDockWidget::DockWidgetMovable feature turned on. :no-frame The item has no frame. For example, a frameless QSpinBox or QLineEdit. :non-exclusive The item is part of a non-exclusive item group. For example, a menu item in a non-exclusive QActionGroup. :off For items that can be toggled, this applies to items in the “off” state. :on For items that can be toggled, this applies to widgets in the “on” state. :only-one The item is the only one (in a list). For example, a lone tab in a QTabBar. :open The item is in the open state. For example, an expanded item in a QTreeView, or a QComboBox or QPushButton with an open menu. :next-selected The next item (in a list) is selected. For example, the selected tab of a QTabBar is next to this item. :pressed The item is being pressed using the mouse. :previous-selected The previous item (in a list) is selected. For example, a tab in a QTabBar that is next to the selected tab. :read-only The item is marked read only or non-editable. For example, a read only QLineEdit or a non-editable QComboBox. :right The item is positioned at the right. For example, a QTabBar that has its tabs positioned at the right. :selected The item is selected. For example, the selected tab in a QTabBar or the selected item in a QMenu. :top The item is positioned at the top. For example, a QTabBar that has its tabs positioned at the top. :unchecked The item is unchecked. :vertical The item has vertical orientation. :window The widget is a window (i.e top level widget) 级联与冲突资料 《QSS总结》 官方参考文档 FAQ继承QWidget后, setStyleSheet无效解决方法:需要重载paintEvent函数,在该函数中加上以下代码: QStyleOption opt; opt.init(this); QPainter p(this); style()-&gt;drawPrimitive(QStyle::PE_Widget, &amp;opt, &amp;p, this); QWidget::paintEvent(e);]]></content>
+      <categories>
+        <category>Libs</category>
+        <category>Qt</category>
+      </categories>
+      <tags>
+        <tag>Qt QSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Git]]></title>
+    <url>%2F2017%2F11%2F20%2FTool-2017-11-20-Git%2F</url>
+    <content type="text"><![CDATA[图形工具 gitkraken: gitea : 类gitlab工具 参考资料 Git-Scm Git子模块]]></content>
+      <categories>
+        <category>Tool</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Git branch]]></title>
+    <url>%2F2017%2F11%2F20%2FTool-2017-11-20-git-branch%2F</url>
+    <content type="text"><![CDATA[1 查看远程分支加上”-a”可以查看远程分支,远程分支会用红色表示出来. $ git branch -a 2 clone远程分支git checkout -b test origin/test # origin/test是从git branch -a 查看到 3 删除远程分支$ git push origin --delete &lt;branchName&gt; #或者 $ git push origin :&lt;branchName&gt; #摄像头一个空分支到远程分支 4 删除不存在对应远程分支的本地分支git fetch -p 5 重命令远程分支$ git branch -m]]></content>
+      <categories>
+        <category>Tool</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>branch</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[README for FPGA]]></title>
+    <url>%2F2017%2F11%2F15%2FFPGA-2017-11-15-FPGA-README%2F</url>
+    <content type="text"><![CDATA[1 FPGA开发流程2 硬件描述语言3 仿真实践4 有限状态机5 IP核使用6 FPGA调试技巧7 FPGA设计技巧8 AD9706开发9 DDS原理和实现10 FPGA的高级IO资源]]></content>
+      <categories>
+        <category>FPGA</category>
+      </categories>
+      <tags>
+        <tag>README FPGA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[FPGA开发基本流程]]></title>
+    <url>%2F2017%2F11%2F15%2FFPGA-2017-11-15-FPGA%E5%BC%80%E5%8F%91%E5%9F%BA%E6%9C%AC%E6%B5%81%E7%A8%8B%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>FPGA</category>
+      </categories>
+      <tags>
+        <tag>开发基本流程 FPGA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Qt宏]]></title>
+    <url>%2F2017%2F11%2F09%2FLibs-Qt-2017-11-09-Qt%E5%AE%8F%2F</url>
+    <content type="text"><![CDATA[1 Qt版本 QT_VERSION: Qt版本号 QT_VERSION_STR: Qt版本号字符串 QT_VERSION_CHECK: Qt版本比较 #if QT_VERSION &gt; QT_VERSION_CHECK(4, 4, 0) 2 系统平台宏的模式” Q_OS_*”, 如:Q_OS_LINUX,表示为Linux操作系统。]]></content>
+      <categories>
+        <category>Libs</category>
+        <category>Qt</category>
+      </categories>
+      <tags>
+        <tag>宏</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[QImage]]></title>
+    <url>%2F2017%2F11%2F04%2FLibs-Qt-2017-11-04-QImage%2F</url>
+    <content type="text"><![CDATA[1 要点 QPixmap: 主要用于加速显示 QImage: 主要用于图像处理 2 用法QImage image; image.load( &quot;:/test.png&quot; ); QPainter painter(this); QPixmap pixmapToShow = QPixmap::fromImage( image.scaled(size(), Qt::KeepAspectRatio) ); painter.drawPixmap(0,0, pixmapToShow); 参考资料 《QImage图像格式小结》 《基于Qt的图像处理技术和算法》]]></content>
+      <categories>
+        <category>Libs</category>
+        <category>Qt</category>
+      </categories>
+      <tags>
+        <tag>QImage Qt</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Golang]]></title>
+    <url>%2F2017%2F10%2F10%2FGolang%2F</url>
+    <content type="text"><![CDATA[学习资料 Go语言圣经]]></content>
+      <categories>
+        <category>Essay</category>
+      </categories>
+      <tags>
+        <tag>golang</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Golang]]></title>
+    <url>%2F2017%2F10%2F10%2FLanguage-Golang-2017-10-10-Golang%2F</url>
+    <content type="text"><![CDATA[学习资料 Go语言圣经]]></content>
+      <categories>
+        <category>Language</category>
+        <category>Golang</category>
+      </categories>
+      <tags>
+        <tag>golang</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Python纪要]]></title>
+    <url>%2F2017%2F09%2F19%2FLanguage-Python-2017-09-19-python%E7%BA%AA%E8%A6%81%2F</url>
+    <content type="text"><![CDATA[内建函数数值内建函数 函数 功能 abs(num) 返回num的绝对值 coerce(num1, num2) 将num1, num2转换为同一类型，然后以一个元组的形式返回 divmod(num1, num2) 除法和取余运算的结合。返回一个元组(num1/num2, num1%num2)。对浮点数和复数的商进行舍入 pow(num1, num2, mod=1) 取num1的num2次方，如果提供mod参数， 则计算结果再对mod进行取余计算 round(flt, ndig=0) 接受一个浮点数flt并对共四舍五入，保存ndig位小数 ord(val) 将val转成ASCII码 chr(val) 将chr转成字符 模块数值相关 decimal :十进制浮点运算类。 array :高效数值数组（字符，整数，浮点数） math/cmath :标准C库数学 运算函数。常规数学运算在math模块，复数运算在cmath模块。 operator :数字运算符的函数实现。 randon :多种伪随机数生成器 Numeric :第三方模块 SciPy :第三方模块]]></content>
+      <categories>
+        <category>Language</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Qt资料]]></title>
+    <url>%2F2017%2F09%2F05%2FLibs-Qt-2017-09-05-Qt%E8%B5%84%E6%96%99%2F</url>
+    <content type="text"><![CDATA[1 开源项目 虚拟键盘 仪表控件 Awesome Qt2 资料 Qt Style Sheets Reference ICO图标搜索 1+1=2的blog文章索引 使用贝塞尔曲线绘制多点连接曲线3 工具 KDAB CEO推荐：Qt开发、调试、诊断的十大工具]]></content>
+      <categories>
+        <category>Libs</category>
+        <category>Qt</category>
+      </categories>
+      <tags>
+        <tag>Qt Datum</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[UML类图]]></title>
+    <url>%2F2017%2F08%2F15%2FLanguage-CXX-2017-08-15-%E7%B1%BB%E5%9B%BE%2F</url>
+    <content type="text"><![CDATA[1 依赖关系依赖（Dependency）关系是一种使用关系，它是对象之间耦合度最弱的一种关联方式，是临时性的关联。在代码中，某个类的方法通过局部变量、方法的参数或者对静态方法的调用来访问另一个类（被依赖类）中的某些方法来完成一些职责。 在 UML 类图中，依赖关系使用带箭头的虚线来表示，箭头从使用类指向被依赖的类。下图是人与手机的关系图，人通过手机的语音传送方法打电话。 `puml {align=”center”}@startumlclass Person { name : String call(MobilePhone mp) : void}note bottomvoid call(MobilePhone mp){mp.transfer();}end note class MobilePhone { transfer() : void}Person .right.&gt; MobilePhone : 打电话 @enduml ## 2 关联关系 关联（Association）关系是对象之间的一种引用关系，用于表示一类对象与另一类对象之间的联系，如老师和学生、师傅和徒弟、丈夫和妻子等。关联关系是类与类之间最常用的一种关系，分为一般关联关系、聚合关系和组合关系。我们先介绍一般关联。 关联可以是双向的，也可以是单向的。在 UML 类图中，双向的关联可以用带两个箭头或者没有箭头的实线来表示，单向的关联用带一个箭头的实线来表示，箭头从使用类指向被关联的类。也可以在关联线的两端标注角色名，代表两种不同的角色。 在代码中通常将一个类的对象作为另一个类的成员变量来实现关联关系。下图是老师和学生的关系图，每个老师可以教多个学生，每个学生也可向多个老师学，他们是双向关联。 ```puml {align=center} @startuml class Teacher { - name: String - students: List&lt;Student&gt; + teaching() : void } class Student { - name: String - teachers: ListTeacher + study() : void } Teacher &quot;教学者&quot;-right-&quot;学习者&quot; Student : teaches to &gt; @enduml 3 聚合关系聚合（Aggregation）关系是关联关系的一种，是强关联关系，是整体和部分之间的关系，是 has-a 的关系。 聚合关系也是通过成员对象来实现的，其中成员对象是整体对象的一部分，但是成员对象可以脱离整体对象而独立存在。例如，学校与老师的关系，学校包含老师，但如果学校停办了，老师依然存在。 在 UML 类图中，聚合关系可以用带空心菱形的实线来表示，菱形指向整体。下图是大学和教师的关系图。 `puml {align=center}@startumlclass University { teachers: List}class Teacher { name: String teaching(): void}University o-right- Teacher @enduml ## 4 组合关系 组合（Composition）关系也是关联关系的一种，也表示类之间的整体与部分的关系，但它是一种更强烈的聚合关系，是 cxmtains-a 关系。 在组合关系中，整体对象可以控制部分对象的生命周期，一旦整体对象不存在，部分对象也将不存在，部分对象不能脱离整体对象而存在。例如，头和嘴的关系，没有了头，嘴也就不存在了。 在 UML 类图中，组合关系用带实心菱形的实线来表示，菱形指向整体。 ```puml {align=center} @startuml class Head { - mouth: mouth } class Mouth { + eat():void } Head *-right- Mouth @enduml 5 泛化关系泛化（Generalization）关系是对象之间耦合度最大的一种关系，表示一般与特殊的关系，是父类与子类之间的关系，是一种继承关系，是 is-a 的关系。 在 UML 类图中，泛化关系用带空心三角箭头的实线来表示，箭头从子类指向父类。在代码实现时，使用面向对象的继承机制来实现泛化关系。例如，Student 类和 Teacher 类都是 Person 类的子类 `puml {align=center}@startumlclass Person { name: String age: int speak(): void} class Student { id: long study(): void} class Teacher { id: long teaching: void}Person &lt;|– StudentPerson &lt;|– Teacher @enduml ## 6 实现关系 实现（Realization）关系是接口与实现类之间的关系。在这种关系中，类实现了接口，类中的操作实现了接口中所声明的所有的抽象操作。 在 UML 类图中，实现关系使用带空心三角箭头的虚线来表示，箭头从实现类指向接口。例如，汽车和船实现了交通工具 ```puml {align=center} @startuml Interface Vehicle { + move(): void } class Car { + move(): void } class Ship { + move(): void } Vehicle &lt;|.. Car Vehicle &lt;|.. Ship @enduml]]></content>
+      <categories>
+        <category>Language</category>
+        <category>CXX</category>
+      </categories>
+      <tags>
+        <tag>UML</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[QThread]]></title>
+    <url>%2F2017%2F08%2F14%2FLibs-Qt-2017-08-14-QThread%2F</url>
+    <content type="text"><![CDATA[1 Qt的线程支持2 QThread的使用方法2.1 继承QThread继承QThread类，并重新实现run函数。 class ExtThread : public QThread { private: public: ExtThread : public QThread; protected: void run() {} }; void test() { ExtThread t; t.start; t.wait(); } 2.2 使用moveToThread最规范的使用QThread方法，QObject的moveToThread函数是将对象加入到指定的线程中。 class Worker { }; int main(int argc, char const *argv[]) { QCoreApplication app; QThread thread; Worker worker; worker.moveToThread(&amp;thread); return app.exec(); } 2.3 使用信号/槽2.4 使用QtConcurrent::run2.4.1 运行类函数void Worker::start() { QtConcurrent::run(this, &amp;Worker::fun1); QtConcurrent::run(this, &amp;Worker::fun1); } void Worker::fun1() { } void Worker::fun2() { } 2.4.2 运行全局函数void printMes(char*mes) { cout&lt;&lt;&quot;pprintMes(char*mes) thread :&quot;&lt;&lt;QThread::currentThreadId()&lt;&lt;endl; cout&lt;&lt;mes&lt;&lt;endl; } int main(int argc, char *argv[]) { QCoreApplication a(argc, argv); cout&lt;&lt;&quot;mainthread:&quot;&lt;&lt;QThread::currentThreadId()&lt;&lt;endl; char* mes= &quot;hello world&quot;; QtConcurrent::run(printMes,mes); returna.exec(); } 3 场景方案 生命周期 场景 方案 无死循环 线程运行一个方法，方法结束后即退出线程 1. 定义一个函数，然后使用QtConcurrent::run()运行2. 从QRunnable派生一个类，并利用全局线程池QThreadPoll::globalInstance()-&gt;start()运行3. 从QTrhead派生一个类，重载QThread::run()函数，然后使用QThread::start运行 无死循环 在容器中所有项执行相同的操作。执行过程中使用所有可用的CPU核 QtConcurrent提供map()函数来将这些操作应用于容器中的每个项，filter()用于选择容器元素，以及指定一个删减函数的选项来与容器中剩下的元素进行合并 无死循环 一个耗时的操作必须在另一个线程中运行，在此期间，状态信息必须发到GUI线程 使用QThread，重载run()函数并根据情况发送信号。使用queued信号/槽连接GUI线程 死循环 有一对象位于另一个线程中，将让其根据不同的请求执行不同的操作 从QObject派生一个类并实现必要的槽和信号，将对象移到一个具有事件循环的线程中，并通过queued信号/槽连接与该对象进行通信 死循环 对象位于另一个线程中，对象不断执行重复的任务（如轮询某个端口，并与GUI线程通信) 在工作者线程中使用一个计时器来实现轮询。但是最好的解决方法是完全避免轮询。使用QSocketNotifier是不错的选择 4 注意事项 QThread如果没有使用继承以及重新实现run方法的话，线程运行完之后，不会产生finish信号。]]></content>
+      <categories>
+        <category>Libs</category>
+        <category>Qt</category>
+      </categories>
+      <tags>
+        <tag>Qt QThread</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[C/C++内联函数]]></title>
+    <url>%2F2017%2F08%2F09%2FLanguage-CXX-2017-08-09-%E5%86%85%E8%81%94%E5%87%BD%E6%95%B0%2F</url>
+    <content type="text"><![CDATA[1 内联函数定义声明一个内联函数需要在定义函数时加上inline， 且定义的函数体必须能被调用者包含或看到。 C内联函数定义 inline void func() {} C++类成员内联函数定义 class A { public: void func1() {} // 类内部实现，默认为内联函数 void func2(); // 类外部实现内联函数 }; inline void A::func2() {} 2 机制被声明为内联函数，编译器会将该函数进行内联编译，即内联函数在最终生成的代码中是没有定义的，编译器直接将函数体插入到函数调用的位置上，有点类似宏函数。所以调用内联函数会比普通函数减少压栈、跳转、返回等额外开销。 3 使用限制其实函数加上inline关键字，是向编译器请求编译时对该函数进行内联，但编译器会不会对该函数进行内联，则需要由编译器自己分析后决定的。对于一些现代的C/C++编译器也提供扩展语法，可以对函数进行强制内联，如g++中的__attribute__((always_inline))属性。以下是一般写内联函数的限制要求 不能包含作任何形式的循环语句 不可存在过多的条件判断语句 函数体不能过大， 5行以内 不能对函数进行取址操作 函数内联必须在调用语句之前]]></content>
+      <categories>
+        <category>Language</category>
+        <category>CXX</category>
+      </categories>
+      <tags>
+        <tag>inline</tag>
+        <tag>内联函数</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[结构体的数据对齐与内存对齐]]></title>
+    <url>%2F2017%2F07%2F31%2FLanguage-CXX-2017-07-31-%E7%BB%93%E6%9E%84%E4%BD%93%E7%9A%84%E6%95%B0%E6%8D%AE%E5%AF%B9%E9%BD%90%E4%B8%8E%E5%86%85%E5%AD%98%E5%AF%B9%E9%BD%90%2F</url>
+    <content type="text"><![CDATA[1 #pragma pack(n)用于告诉编译器结构体或类内部的成员变量相对于第一个变量的地址的偏移量的对齐方式，缺省情况下，编译器按照自然边界对齐，当变量所需的自然对齐边界比n大 时，按照n对齐，否则按照自然边界对齐. 2 attribute((aligned(m)))用于告诉编译器一个结构体或者类或者联合或者一个类型的变量(对象)分配地址空间时的内存地址对齐方式。 3 示例代码#include&lt;stdio.h&gt; #include&lt;sys/types.h&gt; #pragma pack(push) //保存之前的对齐状态 #pragma pack(4) //设置4字节对齐 typedef struct{ u_int32_t v1; // 4 Bytes u_int8_t v2; // 1 Bytes u_int16_t v3; // 2 Bytes u_int32_t v4; // 4 Bytes u_int64_t v5; // 8 Bytes }__attribute__((aligned(1024))) Test; #pragma pack(pop) //恢复对齐状态 int main() { printf(&quot;Size of Struct Test is: %d, aligned on 1024\n&quot;,sizeof(Test)); printf(&quot;v1 : 0x%x\n&quot;,&amp;(((Test*)0)-&gt;v1)); printf(&quot;v2 : 0x%x\n&quot;,&amp;(((Test*)0)-&gt;v2)); printf(&quot;v3 : 0x%x\n&quot;,&amp;(((Test*)0)-&gt;v3)); printf(&quot;v4 : 0x%x\n&quot;,&amp;(((Test*)0)-&gt;v4)); printf(&quot;v5 : 0x%x\n&quot;,&amp;(((Test*)0)-&gt;v5)); return 0; } 输出结果为 Size of Struct Test is: 1024, aligned on 1024 v1 : 0x0 v2 : 0x4 v3 : 0x6 v4 : 0x8 v5 : 0xc]]></content>
+      <categories>
+        <category>Language</category>
+        <category>CXX</category>
+      </categories>
+      <tags>
+        <tag>pragma</tag>
+        <tag>pack</tag>
+        <tag>_attribute_</tag>
+        <tag>aligned</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[虚函数]]></title>
+    <url>%2F2017%2F07%2F27%2FLanguage-CXX-2017-07-27-%E8%99%9A%E5%87%BD%E6%95%B0%2F</url>
+    <content type="text"><![CDATA[1 虚析构函数作用是为了当用一个基类的指针删除一个派生类的对象时，派生类的析构函数会被调用。 并不是所有类的析构函数都要写成虚函数，因为当类有函数时，编译器会给类添加一个虚函数表，里面来存放虚函数指针，这样就会增加类的内存空间，所以只有当一个类被用来作为基类的时候，才把析构函数写成虚函数。 class Base { public: virtual ~Base(){}; } 2 纯虚函数纯虚函数是一种特殊的虚函数，在许多情况下，在基类中不能对虚函数给出有意义的实现，而把它声明为纯虚函数，它的实现留给该基类的派生类去做。这就是纯虚函数的作用。 class Base { public: virtual void show() = 0; } 3 纯虚析构函数析构函数可以声明为纯虚析构函数，用于基类刚好没有任何纯虚函数的情况。纯虚析构函数需要在基类中定义实现，除析构函数外，其他纯虚函数必须在派生类中定义实现。 class Base { public: virtual ~Base() = 0; } Base::~Base() {}]]></content>
+      <categories>
+        <category>Language</category>
+        <category>CXX</category>
+      </categories>
+      <tags>
+        <tag>虚函数</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[书单]]></title>
+    <url>%2F2017%2F07%2F26%2Fbooks%2F</url>
+    <content type="text"><![CDATA[在读书籍 《金融游戏》 《数字图像处理》第三版, Rafael C. Gonzalez, Richard E. Woods 小说类 《别相信任何人》 S.J.沃森 界面设计类 《设计心理学》 《写给大家看的设计书》 金融类 《富爸爸和穷爸爸》这本书让我对理财有一个整体上的概念，本书清晰地介绍什么是财富、资产、负资产，以及对金钱的观点和财产管理方法。]]></content>
+      <categories>
+        <category>Essay</category>
+      </categories>
+      <tags>
+        <tag>书单</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[常用类型转换]]></title>
+    <url>%2F2017%2F07%2F24%2FLibs-Qt-2017-07-24-%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%2F</url>
+    <content type="text"><![CDATA[1 int =&gt; QString 方法1（推荐） QString QString::number(long n, int base=10); 方法2 QString s = QString(&quot;%1&quot;).arg(n); 2 QString =&gt; char *QString str1 = &quot;Test&quot;; QByteArray ba = str1.toLatin1(); // 如果要支持中文，应使用toLocal8Bit() const char *c_str2 = ba.const_data(); 3 float =&gt; QString 方法1（推荐） QString QString::number(double n, char format=&#39;g&#39;, int precision = 6); 方法2 float f = 8.9; QString str = QString(&quot;float is ％1&quot;).arg(f);]]></content>
+      <categories>
+        <category>Libs</category>
+        <category>Qt</category>
+      </categories>
+      <tags>
+        <tag>Qt 类型转换</tag>
+      </tags>
+  </entry>
+</search>

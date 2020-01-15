@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://add358.github.io/"/>
+  <link href="https://add358.gitee.io/"/>
   <updated>2020-01-03T09:16:41.002Z</updated>
-  <id>https://add358.github.io/</id>
+  <id>https://add358.gitee.io/</id>
   
   <author>
     <name>Jake Yang</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Artistic Style - 代码格式化工具</title>
-    <link href="https://add358.github.io/2020/01/03/Language-CXX-2020-0103-Artistic-Style-%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%B7%A5%E5%85%B7/"/>
-    <id>https://add358.github.io/2020/01/03/Language-CXX-2020-0103-Artistic-Style-代码格式化工具/</id>
+    <link href="https://add358.gitee.io/2020/01/03/Language-CXX-2020-0103-Artistic-Style-%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%B7%A5%E5%85%B7/"/>
+    <id>https://add358.gitee.io/2020/01/03/Language-CXX-2020-0103-Artistic-Style-代码格式化工具/</id>
     <published>2020-01-02T16:00:00.000Z</published>
     <updated>2020-01-03T09:16:41.002Z</updated>
     
@@ -29,25 +29,25 @@
     
     </summary>
     
-      <category term="Language" scheme="https://add358.github.io/categories/Language/"/>
+      <category term="Language" scheme="https://add358.gitee.io/categories/Language/"/>
     
-      <category term="CXX" scheme="https://add358.github.io/categories/Language/CXX/"/>
+      <category term="CXX" scheme="https://add358.gitee.io/categories/Language/CXX/"/>
     
     
-      <category term="C++" scheme="https://add358.github.io/tags/C/"/>
+      <category term="C++" scheme="https://add358.gitee.io/tags/C/"/>
     
-      <category term="format" scheme="https://add358.github.io/tags/format/"/>
+      <category term="format" scheme="https://add358.gitee.io/tags/format/"/>
     
-      <category term="artistic" scheme="https://add358.github.io/tags/artistic/"/>
+      <category term="artistic" scheme="https://add358.gitee.io/tags/artistic/"/>
     
-      <category term="style" scheme="https://add358.github.io/tags/style/"/>
+      <category term="style" scheme="https://add358.gitee.io/tags/style/"/>
     
   </entry>
   
   <entry>
     <title>Python基础语法</title>
-    <link href="https://add358.github.io/2019/12/19/Language-Python-2019-12-19-%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
-    <id>https://add358.github.io/2019/12/19/Language-Python-2019-12-19-基本语法/</id>
+    <link href="https://add358.gitee.io/2019/12/19/Language-Python-2019-12-19-%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
+    <id>https://add358.gitee.io/2019/12/19/Language-Python-2019-12-19-基本语法/</id>
     <published>2019-12-19T09:08:00.000Z</published>
     <updated>2020-01-08T06:45:10.309Z</updated>
     
@@ -64,19 +64,19 @@
     
     </summary>
     
-      <category term="Language" scheme="https://add358.github.io/categories/Language/"/>
+      <category term="Language" scheme="https://add358.gitee.io/categories/Language/"/>
     
-      <category term="Python" scheme="https://add358.github.io/categories/Language/Python/"/>
+      <category term="Python" scheme="https://add358.gitee.io/categories/Language/Python/"/>
     
     
-      <category term="语法" scheme="https://add358.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
+      <category term="语法" scheme="https://add358.gitee.io/tags/%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>QThread</title>
-    <link href="https://add358.github.io/2019/11/18/Libs-Qt-2019-11-18-%E8%AE%BE%E7%BD%AEQPushButton%E9%80%8F%E6%98%8E%E8%83%8C%E6%99%AF/"/>
-    <id>https://add358.github.io/2019/11/18/Libs-Qt-2019-11-18-设置QPushButton透明背景/</id>
+    <link href="https://add358.gitee.io/2019/11/18/Libs-Qt-2019-11-18-%E8%AE%BE%E7%BD%AEQPushButton%E9%80%8F%E6%98%8E%E8%83%8C%E6%99%AF/"/>
+    <id>https://add358.gitee.io/2019/11/18/Libs-Qt-2019-11-18-设置QPushButton透明背景/</id>
     <published>2019-11-17T16:00:00.000Z</published>
     <updated>2019-12-16T08:15:01.400Z</updated>
     
@@ -86,19 +86,19 @@
     
     </summary>
     
-      <category term="Libs" scheme="https://add358.github.io/categories/Libs/"/>
+      <category term="Libs" scheme="https://add358.gitee.io/categories/Libs/"/>
     
-      <category term="Qt" scheme="https://add358.github.io/categories/Libs/Qt/"/>
+      <category term="Qt" scheme="https://add358.gitee.io/categories/Libs/Qt/"/>
     
     
-      <category term="Qt QPushButton" scheme="https://add358.github.io/tags/Qt-QPushButton/"/>
+      <category term="Qt QPushButton" scheme="https://add358.gitee.io/tags/Qt-QPushButton/"/>
     
   </entry>
   
   <entry>
     <title>文件系统分区信息错误引起的问题</title>
-    <link href="https://add358.github.io/2019/03/02/Linux-2019-03-02-%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%88%86%E5%8C%BA%E4%BF%A1%E6%81%AF%E9%94%99%E8%AF%AF%E5%BC%95%E8%B5%B7%E7%9A%84%E9%97%AE%E9%A2%98/"/>
-    <id>https://add358.github.io/2019/03/02/Linux-2019-03-02-文件系统分区信息错误引起的问题/</id>
+    <link href="https://add358.gitee.io/2019/03/02/Linux-2019-03-02-%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%88%86%E5%8C%BA%E4%BF%A1%E6%81%AF%E9%94%99%E8%AF%AF%E5%BC%95%E8%B5%B7%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <id>https://add358.gitee.io/2019/03/02/Linux-2019-03-02-文件系统分区信息错误引起的问题/</id>
     <published>2019-03-02T08:58:14.000Z</published>
     <updated>2019-03-04T12:02:58.400Z</updated>
     
@@ -115,17 +115,17 @@
     
     </summary>
     
-      <category term="Linux" scheme="https://add358.github.io/categories/Linux/"/>
+      <category term="Linux" scheme="https://add358.gitee.io/categories/Linux/"/>
     
     
-      <category term="ISSUE" scheme="https://add358.github.io/tags/ISSUE/"/>
+      <category term="ISSUE" scheme="https://add358.gitee.io/tags/ISSUE/"/>
     
   </entry>
   
   <entry>
     <title>动态库路径设置</title>
-    <link href="https://add358.github.io/2019/01/26/Linux-2019-01-26-%E5%8A%A8%E6%80%81%E5%BA%93%E8%B7%AF%E5%BE%84%E8%AE%BE%E7%BD%AE/"/>
-    <id>https://add358.github.io/2019/01/26/Linux-2019-01-26-动态库路径设置/</id>
+    <link href="https://add358.gitee.io/2019/01/26/Linux-2019-01-26-%E5%8A%A8%E6%80%81%E5%BA%93%E8%B7%AF%E5%BE%84%E8%AE%BE%E7%BD%AE/"/>
+    <id>https://add358.gitee.io/2019/01/26/Linux-2019-01-26-动态库路径设置/</id>
     <published>2019-01-26T07:10:57.000Z</published>
     <updated>2019-03-04T08:10:54.968Z</updated>
     
@@ -141,19 +141,19 @@
     
     </summary>
     
-      <category term="Linux" scheme="https://add358.github.io/categories/Linux/"/>
+      <category term="Linux" scheme="https://add358.gitee.io/categories/Linux/"/>
     
     
-      <category term="library" scheme="https://add358.github.io/tags/library/"/>
+      <category term="library" scheme="https://add358.gitee.io/tags/library/"/>
     
-      <category term="so" scheme="https://add358.github.io/tags/so/"/>
+      <category term="so" scheme="https://add358.gitee.io/tags/so/"/>
     
   </entry>
   
   <entry>
     <title>qsettings</title>
-    <link href="https://add358.github.io/2019/01/08/Libs-Qt-2019-01-08-qsettings/"/>
-    <id>https://add358.github.io/2019/01/08/Libs-Qt-2019-01-08-qsettings/</id>
+    <link href="https://add358.gitee.io/2019/01/08/Libs-Qt-2019-01-08-qsettings/"/>
+    <id>https://add358.gitee.io/2019/01/08/Libs-Qt-2019-01-08-qsettings/</id>
     <published>2019-01-08T03:11:02.000Z</published>
     <updated>2019-12-16T08:14:55.660Z</updated>
     
@@ -163,23 +163,23 @@
     
     </summary>
     
-      <category term="Libs" scheme="https://add358.github.io/categories/Libs/"/>
+      <category term="Libs" scheme="https://add358.gitee.io/categories/Libs/"/>
     
-      <category term="Qt" scheme="https://add358.github.io/categories/Libs/Qt/"/>
+      <category term="Qt" scheme="https://add358.gitee.io/categories/Libs/Qt/"/>
     
     
-      <category term="Qt" scheme="https://add358.github.io/tags/Qt/"/>
+      <category term="Qt" scheme="https://add358.gitee.io/tags/Qt/"/>
     
-      <category term="QSetting" scheme="https://add358.github.io/tags/QSetting/"/>
+      <category term="QSetting" scheme="https://add358.gitee.io/tags/QSetting/"/>
     
-      <category term="配置" scheme="https://add358.github.io/tags/%E9%85%8D%E7%BD%AE/"/>
+      <category term="配置" scheme="https://add358.gitee.io/tags/%E9%85%8D%E7%BD%AE/"/>
     
   </entry>
   
   <entry>
     <title>修改卷标</title>
-    <link href="https://add358.github.io/2018/12/25/%E4%BF%AE%E6%94%B9%E5%8D%B7%E6%A0%87/"/>
-    <id>https://add358.github.io/2018/12/25/修改卷标/</id>
+    <link href="https://add358.gitee.io/2018/12/25/%E4%BF%AE%E6%94%B9%E5%8D%B7%E6%A0%87/"/>
+    <id>https://add358.gitee.io/2018/12/25/修改卷标/</id>
     <published>2018-12-25T08:18:54.000Z</published>
     <updated>2018-12-25T08:23:20.140Z</updated>
     
@@ -189,23 +189,23 @@
     
     </summary>
     
-      <category term="Linux" scheme="https://add358.github.io/categories/Linux/"/>
+      <category term="Linux" scheme="https://add358.gitee.io/categories/Linux/"/>
     
     
-      <category term="Linux" scheme="https://add358.github.io/tags/Linux/"/>
+      <category term="Linux" scheme="https://add358.gitee.io/tags/Linux/"/>
     
-      <category term="卷标" scheme="https://add358.github.io/tags/%E5%8D%B7%E6%A0%87/"/>
+      <category term="卷标" scheme="https://add358.gitee.io/tags/%E5%8D%B7%E6%A0%87/"/>
     
-      <category term="分区" scheme="https://add358.github.io/tags/%E5%88%86%E5%8C%BA/"/>
+      <category term="分区" scheme="https://add358.gitee.io/tags/%E5%88%86%E5%8C%BA/"/>
     
-      <category term="名称" scheme="https://add358.github.io/tags/%E5%90%8D%E7%A7%B0/"/>
+      <category term="名称" scheme="https://add358.gitee.io/tags/%E5%90%8D%E7%A7%B0/"/>
     
   </entry>
   
   <entry>
     <title>谷歌拼音库接口说明及使用</title>
-    <link href="https://add358.github.io/2018/12/19/Libs-Qt-2018-12-19-%E8%B0%B7%E6%AD%8C%E6%8B%BC%E9%9F%B3%E5%BA%93%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E%E5%8F%8A%E4%BD%BF%E7%94%A8/"/>
-    <id>https://add358.github.io/2018/12/19/Libs-Qt-2018-12-19-谷歌拼音库接口说明及使用/</id>
+    <link href="https://add358.gitee.io/2018/12/19/Libs-Qt-2018-12-19-%E8%B0%B7%E6%AD%8C%E6%8B%BC%E9%9F%B3%E5%BA%93%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E%E5%8F%8A%E4%BD%BF%E7%94%A8/"/>
+    <id>https://add358.gitee.io/2018/12/19/Libs-Qt-2018-12-19-谷歌拼音库接口说明及使用/</id>
     <published>2018-12-19T03:11:20.000Z</published>
     <updated>2019-12-16T08:14:50.840Z</updated>
     
@@ -221,23 +221,23 @@
     
     </summary>
     
-      <category term="Libs" scheme="https://add358.github.io/categories/Libs/"/>
+      <category term="Libs" scheme="https://add358.gitee.io/categories/Libs/"/>
     
-      <category term="Qt" scheme="https://add358.github.io/categories/Libs/Qt/"/>
+      <category term="Qt" scheme="https://add358.gitee.io/categories/Libs/Qt/"/>
     
     
-      <category term="输入法" scheme="https://add358.github.io/tags/%E8%BE%93%E5%85%A5%E6%B3%95/"/>
+      <category term="输入法" scheme="https://add358.gitee.io/tags/%E8%BE%93%E5%85%A5%E6%B3%95/"/>
     
-      <category term="pinyinime" scheme="https://add358.github.io/tags/pinyinime/"/>
+      <category term="pinyinime" scheme="https://add358.gitee.io/tags/pinyinime/"/>
     
-      <category term="谷歌拼音" scheme="https://add358.github.io/tags/%E8%B0%B7%E6%AD%8C%E6%8B%BC%E9%9F%B3/"/>
+      <category term="谷歌拼音" scheme="https://add358.gitee.io/tags/%E8%B0%B7%E6%AD%8C%E6%8B%BC%E9%9F%B3/"/>
     
   </entry>
   
   <entry>
     <title>ssh</title>
-    <link href="https://add358.github.io/2018/12/13/Tool-2018-12-13-ssh/"/>
-    <id>https://add358.github.io/2018/12/13/Tool-2018-12-13-ssh/</id>
+    <link href="https://add358.gitee.io/2018/12/13/Tool-2018-12-13-ssh/"/>
+    <id>https://add358.gitee.io/2018/12/13/Tool-2018-12-13-ssh/</id>
     <published>2018-12-13T03:29:43.000Z</published>
     <updated>2018-12-13T03:31:03.786Z</updated>
     
@@ -247,17 +247,17 @@
     
     </summary>
     
-      <category term="Tool" scheme="https://add358.github.io/categories/Tool/"/>
+      <category term="Tool" scheme="https://add358.gitee.io/categories/Tool/"/>
     
     
-      <category term="ssh" scheme="https://add358.github.io/tags/ssh/"/>
+      <category term="ssh" scheme="https://add358.gitee.io/tags/ssh/"/>
     
   </entry>
   
   <entry>
     <title>vboxbox的linux系统下挂载共享目录</title>
-    <link href="https://add358.github.io/2018/12/11/Tool-2018-12-11-%E5%9C%A8vboxbox%E7%9A%84linux%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%8C%82%E8%BD%BD%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6/"/>
-    <id>https://add358.github.io/2018/12/11/Tool-2018-12-11-在vboxbox的linux虚拟机系统下挂载共享文件/</id>
+    <link href="https://add358.gitee.io/2018/12/11/Tool-2018-12-11-%E5%9C%A8vboxbox%E7%9A%84linux%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%B3%BB%E7%BB%9F%E4%B8%8B%E6%8C%82%E8%BD%BD%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6/"/>
+    <id>https://add358.gitee.io/2018/12/11/Tool-2018-12-11-在vboxbox的linux虚拟机系统下挂载共享文件/</id>
     <published>2018-12-11T08:08:33.000Z</published>
     <updated>2018-12-11T08:16:27.960Z</updated>
     
@@ -273,19 +273,19 @@
     
     </summary>
     
-      <category term="Tool" scheme="https://add358.github.io/categories/Tool/"/>
+      <category term="Tool" scheme="https://add358.gitee.io/categories/Tool/"/>
     
     
-      <category term="virtualbox" scheme="https://add358.github.io/tags/virtualbox/"/>
+      <category term="virtualbox" scheme="https://add358.gitee.io/tags/virtualbox/"/>
     
-      <category term="share" scheme="https://add358.github.io/tags/share/"/>
+      <category term="share" scheme="https://add358.gitee.io/tags/share/"/>
     
   </entry>
   
   <entry>
     <title>matlablib画曲线</title>
-    <link href="https://add358.github.io/2018/12/06/Language-Python-2018-12-06-matlablib%E7%94%BB%E6%9B%B2%E7%BA%BF/"/>
-    <id>https://add358.github.io/2018/12/06/Language-Python-2018-12-06-matlablib画曲线/</id>
+    <link href="https://add358.gitee.io/2018/12/06/Language-Python-2018-12-06-matlablib%E7%94%BB%E6%9B%B2%E7%BA%BF/"/>
+    <id>https://add358.gitee.io/2018/12/06/Language-Python-2018-12-06-matlablib画曲线/</id>
     <published>2018-12-06T03:31:26.000Z</published>
     <updated>2019-12-16T08:03:36.336Z</updated>
     
@@ -302,21 +302,21 @@
     
     </summary>
     
-      <category term="Language" scheme="https://add358.github.io/categories/Language/"/>
+      <category term="Language" scheme="https://add358.gitee.io/categories/Language/"/>
     
-      <category term="Python" scheme="https://add358.github.io/categories/Language/Python/"/>
+      <category term="Python" scheme="https://add358.gitee.io/categories/Language/Python/"/>
     
     
-      <category term="曲线" scheme="https://add358.github.io/tags/%E6%9B%B2%E7%BA%BF/"/>
+      <category term="曲线" scheme="https://add358.gitee.io/tags/%E6%9B%B2%E7%BA%BF/"/>
     
-      <category term="matlablib" scheme="https://add358.github.io/tags/matlablib/"/>
+      <category term="matlablib" scheme="https://add358.gitee.io/tags/matlablib/"/>
     
   </entry>
   
   <entry>
     <title>tar打包加密文件</title>
-    <link href="https://add358.github.io/2018/12/04/Linux-2018-12-04-tar%E6%89%93%E5%8C%85%E5%8A%A0%E5%AF%86%E6%96%87%E4%BB%B6/"/>
-    <id>https://add358.github.io/2018/12/04/Linux-2018-12-04-tar打包加密文件/</id>
+    <link href="https://add358.gitee.io/2018/12/04/Linux-2018-12-04-tar%E6%89%93%E5%8C%85%E5%8A%A0%E5%AF%86%E6%96%87%E4%BB%B6/"/>
+    <id>https://add358.gitee.io/2018/12/04/Linux-2018-12-04-tar打包加密文件/</id>
     <published>2018-12-04T01:40:03.000Z</published>
     <updated>2018-12-04T01:45:24.708Z</updated>
     
@@ -326,21 +326,21 @@
     
     </summary>
     
-      <category term="Linux" scheme="https://add358.github.io/categories/Linux/"/>
+      <category term="Linux" scheme="https://add358.gitee.io/categories/Linux/"/>
     
     
-      <category term="加密" scheme="https://add358.github.io/tags/%E5%8A%A0%E5%AF%86/"/>
+      <category term="加密" scheme="https://add358.gitee.io/tags/%E5%8A%A0%E5%AF%86/"/>
     
-      <category term="tar" scheme="https://add358.github.io/tags/tar/"/>
+      <category term="tar" scheme="https://add358.gitee.io/tags/tar/"/>
     
-      <category term="openssl" scheme="https://add358.github.io/tags/openssl/"/>
+      <category term="openssl" scheme="https://add358.gitee.io/tags/openssl/"/>
     
   </entry>
   
   <entry>
     <title>测试驱动开发</title>
-    <link href="https://add358.github.io/2018/12/04/%E6%B5%8B%E8%AF%95%E9%A9%B1%E5%8A%A8%E5%BC%80%E5%8F%91/"/>
-    <id>https://add358.github.io/2018/12/04/测试驱动开发/</id>
+    <link href="https://add358.gitee.io/2018/12/04/%E6%B5%8B%E8%AF%95%E9%A9%B1%E5%8A%A8%E5%BC%80%E5%8F%91/"/>
+    <id>https://add358.gitee.io/2018/12/04/测试驱动开发/</id>
     <published>2018-12-04T01:19:37.000Z</published>
     <updated>2018-12-04T01:22:54.380Z</updated>
     
@@ -350,19 +350,19 @@
     
     </summary>
     
-      <category term="Essay" scheme="https://add358.github.io/categories/Essay/"/>
+      <category term="Essay" scheme="https://add358.gitee.io/categories/Essay/"/>
     
     
-      <category term="测试" scheme="https://add358.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+      <category term="测试" scheme="https://add358.gitee.io/tags/%E6%B5%8B%E8%AF%95/"/>
     
-      <category term="驱动" scheme="https://add358.github.io/tags/%E9%A9%B1%E5%8A%A8/"/>
+      <category term="驱动" scheme="https://add358.gitee.io/tags/%E9%A9%B1%E5%8A%A8/"/>
     
   </entry>
   
   <entry>
     <title>psplash</title>
-    <link href="https://add358.github.io/2018/11/30/Linux-2018-11-30-psplash/"/>
-    <id>https://add358.github.io/2018/11/30/Linux-2018-11-30-psplash/</id>
+    <link href="https://add358.gitee.io/2018/11/30/Linux-2018-11-30-psplash/"/>
+    <id>https://add358.gitee.io/2018/11/30/Linux-2018-11-30-psplash/</id>
     <published>2018-11-30T08:11:51.000Z</published>
     <updated>2018-12-04T01:22:38.732Z</updated>
     
@@ -372,19 +372,19 @@
     
     </summary>
     
-      <category term="Linux" scheme="https://add358.github.io/categories/Linux/"/>
+      <category term="Linux" scheme="https://add358.gitee.io/categories/Linux/"/>
     
     
-      <category term="psplash" scheme="https://add358.github.io/tags/psplash/"/>
+      <category term="psplash" scheme="https://add358.gitee.io/tags/psplash/"/>
     
-      <category term="启动界面" scheme="https://add358.github.io/tags/%E5%90%AF%E5%8A%A8%E7%95%8C%E9%9D%A2/"/>
+      <category term="启动界面" scheme="https://add358.gitee.io/tags/%E5%90%AF%E5%8A%A8%E7%95%8C%E9%9D%A2/"/>
     
   </entry>
   
   <entry>
     <title>定义新字“火写“</title>
-    <link href="https://add358.github.io/2018/11/30/%E5%AE%9A%E4%B9%89%E6%96%B0%E5%AD%97%E2%80%9C%E7%81%AB%E5%86%99%E2%80%9C/"/>
-    <id>https://add358.github.io/2018/11/30/定义新字“火写“/</id>
+    <link href="https://add358.gitee.io/2018/11/30/%E5%AE%9A%E4%B9%89%E6%96%B0%E5%AD%97%E2%80%9C%E7%81%AB%E5%86%99%E2%80%9C/"/>
+    <id>https://add358.gitee.io/2018/11/30/定义新字“火写“/</id>
     <published>2018-11-30T06:54:22.000Z</published>
     <updated>2018-12-04T01:22:39.524Z</updated>
     
@@ -394,17 +394,17 @@
     
     </summary>
     
-      <category term="Essay" scheme="https://add358.github.io/categories/Essay/"/>
+      <category term="Essay" scheme="https://add358.gitee.io/categories/Essay/"/>
     
     
-      <category term="新字" scheme="https://add358.github.io/tags/%E6%96%B0%E5%AD%97/"/>
+      <category term="新字" scheme="https://add358.gitee.io/tags/%E6%96%B0%E5%AD%97/"/>
     
   </entry>
   
   <entry>
     <title>制作ubifs文件系统固件</title>
-    <link href="https://add358.github.io/2018/11/30/Linux-2018-11-30-%E5%88%B6%E4%BD%9Cubifs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%9B%BA%E4%BB%B6/"/>
-    <id>https://add358.github.io/2018/11/30/Linux-2018-11-30-制作ubifs文件系统固件/</id>
+    <link href="https://add358.gitee.io/2018/11/30/Linux-2018-11-30-%E5%88%B6%E4%BD%9Cubifs%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%9B%BA%E4%BB%B6/"/>
+    <id>https://add358.gitee.io/2018/11/30/Linux-2018-11-30-制作ubifs文件系统固件/</id>
     <published>2018-11-30T05:53:19.000Z</published>
     <updated>2018-11-30T05:57:36.098Z</updated>
     
@@ -414,17 +414,17 @@
     
     </summary>
     
-      <category term="Linux" scheme="https://add358.github.io/categories/Linux/"/>
+      <category term="Linux" scheme="https://add358.gitee.io/categories/Linux/"/>
     
     
-      <category term="ubifs" scheme="https://add358.github.io/tags/ubifs/"/>
+      <category term="ubifs" scheme="https://add358.gitee.io/tags/ubifs/"/>
     
   </entry>
   
   <entry>
     <title>QCryptographicHash</title>
-    <link href="https://add358.github.io/2018/11/29/Libs-Qt-2018-11-29-MD5/"/>
-    <id>https://add358.github.io/2018/11/29/Libs-Qt-2018-11-29-MD5/</id>
+    <link href="https://add358.gitee.io/2018/11/29/Libs-Qt-2018-11-29-MD5/"/>
+    <id>https://add358.gitee.io/2018/11/29/Libs-Qt-2018-11-29-MD5/</id>
     <published>2018-11-29T08:10:24.000Z</published>
     <updated>2019-12-16T08:14:44.412Z</updated>
     
@@ -442,23 +442,23 @@
     
     </summary>
     
-      <category term="Libs" scheme="https://add358.github.io/categories/Libs/"/>
+      <category term="Libs" scheme="https://add358.gitee.io/categories/Libs/"/>
     
-      <category term="Qt" scheme="https://add358.github.io/categories/Libs/Qt/"/>
+      <category term="Qt" scheme="https://add358.gitee.io/categories/Libs/Qt/"/>
     
     
-      <category term="加密" scheme="https://add358.github.io/tags/%E5%8A%A0%E5%AF%86/"/>
+      <category term="加密" scheme="https://add358.gitee.io/tags/%E5%8A%A0%E5%AF%86/"/>
     
-      <category term="MD5" scheme="https://add358.github.io/tags/MD5/"/>
+      <category term="MD5" scheme="https://add358.gitee.io/tags/MD5/"/>
     
-      <category term="解密" scheme="https://add358.github.io/tags/%E8%A7%A3%E5%AF%86/"/>
+      <category term="解密" scheme="https://add358.gitee.io/tags/%E8%A7%A3%E5%AF%86/"/>
     
   </entry>
   
   <entry>
     <title>排序算法</title>
-    <link href="https://add358.github.io/2018/11/22/algorithm/"/>
-    <id>https://add358.github.io/2018/11/22/algorithm/</id>
+    <link href="https://add358.gitee.io/2018/11/22/algorithm/"/>
+    <id>https://add358.gitee.io/2018/11/22/algorithm/</id>
     <published>2018-11-21T16:00:00.000Z</published>
     <updated>2018-12-04T01:22:30.453Z</updated>
     
@@ -475,19 +475,19 @@
     
     </summary>
     
-      <category term="Essay" scheme="https://add358.github.io/categories/Essay/"/>
+      <category term="Essay" scheme="https://add358.gitee.io/categories/Essay/"/>
     
     
-      <category term="排序" scheme="https://add358.github.io/tags/%E6%8E%92%E5%BA%8F/"/>
+      <category term="排序" scheme="https://add358.gitee.io/tags/%E6%8E%92%E5%BA%8F/"/>
     
-      <category term="算法" scheme="https://add358.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://add358.gitee.io/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>技能的思考</title>
-    <link href="https://add358.github.io/2018/11/15/%E6%8A%80%E8%83%BD%E7%9A%84%E6%80%9D%E8%80%83/"/>
-    <id>https://add358.github.io/2018/11/15/技能的思考/</id>
+    <link href="https://add358.gitee.io/2018/11/15/%E6%8A%80%E8%83%BD%E7%9A%84%E6%80%9D%E8%80%83/"/>
+    <id>https://add358.gitee.io/2018/11/15/技能的思考/</id>
     <published>2018-11-14T16:00:00.000Z</published>
     <updated>2018-12-04T01:22:31.829Z</updated>
     
@@ -504,17 +504,17 @@
     
     </summary>
     
-      <category term="Essay" scheme="https://add358.github.io/categories/Essay/"/>
+      <category term="Essay" scheme="https://add358.gitee.io/categories/Essay/"/>
     
     
-      <category term="Skill" scheme="https://add358.github.io/tags/Skill/"/>
+      <category term="Skill" scheme="https://add358.gitee.io/tags/Skill/"/>
     
   </entry>
   
   <entry>
     <title>好玩好用的Linux工具</title>
-    <link href="https://add358.github.io/2018/11/15/Tool-2018-11-15-%E5%A5%BD%E7%8E%A9%E5%A5%BD%E7%94%A8%E7%9A%84Linux%E5%B7%A5%E5%85%B7/"/>
-    <id>https://add358.github.io/2018/11/15/Tool-2018-11-15-好玩好用的Linux工具/</id>
+    <link href="https://add358.gitee.io/2018/11/15/Tool-2018-11-15-%E5%A5%BD%E7%8E%A9%E5%A5%BD%E7%94%A8%E7%9A%84Linux%E5%B7%A5%E5%85%B7/"/>
+    <id>https://add358.gitee.io/2018/11/15/Tool-2018-11-15-好玩好用的Linux工具/</id>
     <published>2018-11-14T16:00:00.000Z</published>
     <updated>2018-11-27T07:05:54.100Z</updated>
     
@@ -534,12 +534,12 @@
     
     </summary>
     
-      <category term="Tool" scheme="https://add358.github.io/categories/Tool/"/>
+      <category term="Tool" scheme="https://add358.gitee.io/categories/Tool/"/>
     
     
-      <category term="Linux" scheme="https://add358.github.io/tags/Linux/"/>
+      <category term="Linux" scheme="https://add358.gitee.io/tags/Linux/"/>
     
-      <category term="Tools" scheme="https://add358.github.io/tags/Tools/"/>
+      <category term="Tools" scheme="https://add358.gitee.io/tags/Tools/"/>
     
   </entry>
   

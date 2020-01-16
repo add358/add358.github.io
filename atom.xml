@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://add358.github.io/"/>
-  <updated>2020-01-16T07:26:54.950Z</updated>
+  <updated>2020-01-16T07:31:02.463Z</updated>
   <id>https://add358.github.io/</id>
   
   <author>
@@ -17,24 +17,26 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hexo支持PlantUML图表.md</title>
+    <title>Hexo支持PlantUML图表</title>
     <link href="https://add358.github.io/2020/01/16/Essay-2020-01-16-Hexo%E6%94%AF%E6%8C%81PlantUML%E5%9B%BE%E8%A1%A8/"/>
     <id>https://add358.github.io/2020/01/16/Essay-2020-01-16-Hexo支持PlantUML图表/</id>
     <published>2020-01-16T07:07:53.000Z</published>
-    <updated>2020-01-16T07:26:54.950Z</updated>
+    <updated>2020-01-16T07:31:02.463Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;1-安装hexo-filter-markdown-filter插件&quot;&gt;&lt;a href=&quot;#1-安装hexo-filter-markdown-filter插件&quot; class=&quot;headerlink&quot; title=&quot;1
-        
-      
+      hexo支持plantuml图表
     
     </summary>
     
+      <category term="Essay" scheme="https://add358.github.io/categories/Essay/"/>
+    
+    
+      <category term="hexo" scheme="https://add358.github.io/tags/hexo/"/>
+    
+      <category term="plantuml" scheme="https://add358.github.io/tags/plantuml/"/>
+    
+      <category term="markdown" scheme="https://add358.github.io/tags/markdown/"/>
     
   </entry>
   

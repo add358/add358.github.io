@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://add358.github.io/"/>
-  <updated>2020-01-03T09:16:41.002Z</updated>
+  <updated>2020-01-16T07:24:37.307Z</updated>
   <id>https://add358.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo支持PlantUML图表.md</title>
+    <link href="https://add358.github.io/2020/01/16/Hexo%E6%94%AF%E6%8C%81PlantUML%E5%9B%BE%E8%A1%A8/"/>
+    <id>https://add358.github.io/2020/01/16/Hexo支持PlantUML图表/</id>
+    <published>2020-01-16T07:07:53.000Z</published>
+    <updated>2020-01-16T07:24:37.307Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;1-安装hexo-filter-markdown-filter插件&quot;&gt;&lt;a href=&quot;#1-安装hexo-filter-markdown-filter插件&quot; class=&quot;headerlink&quot; title=&quot;1
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Artistic Style - 代码格式化工具</title>
@@ -508,38 +530,6 @@
     
     
       <category term="Skill" scheme="https://add358.github.io/tags/Skill/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>好玩好用的Linux工具</title>
-    <link href="https://add358.github.io/2018/11/15/Tool-2018-11-15-%E5%A5%BD%E7%8E%A9%E5%A5%BD%E7%94%A8%E7%9A%84Linux%E5%B7%A5%E5%85%B7/"/>
-    <id>https://add358.github.io/2018/11/15/Tool-2018-11-15-好玩好用的Linux工具/</id>
-    <published>2018-11-14T16:00:00.000Z</published>
-    <updated>2018-11-27T07:05:54.100Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;本文罗列出在使用Linux系统中使用到的好用或好玩的软件工具。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;iotop 查看内存和IO负载&lt;/li&gt;
-&lt;li&gt;systemd-analyze 在使用systemd的系统上看开机速度的&lt;/li&gt;
-&lt;li&gt;fortune
-        
-      
-    
-    </summary>
-    
-      <category term="Tool" scheme="https://add358.github.io/categories/Tool/"/>
-    
-    
-      <category term="Linux" scheme="https://add358.github.io/tags/Linux/"/>
-    
-      <category term="Tools" scheme="https://add358.github.io/tags/Tools/"/>
     
   </entry>
   

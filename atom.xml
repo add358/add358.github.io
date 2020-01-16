@@ -81,7 +81,8 @@
       
         
         
-          &lt;h1 id=&quot;Python命令行参数&quot;&gt;&lt;a href=&quot;#Python命令行参数&quot; class=&quot;headerlink&quot; title=&quot;Python命令行参数&quot;&gt;&lt;/a&gt;Python命令行参数&lt;/h1&gt;&lt;p&gt;&lt;a name=&quot;tCH7W&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+          &lt;h1 id=&quot;python命令行参数&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#python命令行参数&quot;&gt;&lt;/a&gt; Python命令行参数&lt;/h1&gt;
+&lt;p&gt;&lt;a name=&quot;tCH7W&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2
         
       
@@ -132,8 +133,9 @@
       
         
         
-          &lt;h2 id=&quot;问题现象&quot;&gt;&lt;a href=&quot;#问题现象&quot; class=&quot;headerlink&quot; title=&quot;问题现象&quot;&gt;&lt;/a&gt;问题现象&lt;/h2&gt;&lt;p&gt;设备断电后重启，内核会出现打印出如下信息,显示存储设备的文件格式有问题。&lt;/p&gt;
-&lt;pre&gt;&lt;code
+          &lt;h2 id=&quot;问题现象&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#问题现象&quot;&gt;&lt;/a&gt; 问题现象&lt;/h2&gt;
+&lt;p&gt;设备断电后重启，内核会出现打印出如下信息,显示存储设备的文件格式有问题。&lt;/p&gt;
+&lt;pre
         
       
     
@@ -159,7 +161,8 @@
       
         
         
-          &lt;h1 id=&quot;1-程序编译链接时&quot;&gt;&lt;a href=&quot;#1-程序编译链接时&quot; class=&quot;headerlink&quot; title=&quot;1 程序编译链接时&quot;&gt;&lt;/a&gt;1
+          &lt;h1 id=&quot;1-程序编译链接时&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1-程序编译链接时&quot;&gt;&lt;/a&gt; 1 程序编译链接时&lt;/h1&gt;
+&lt;p&gt;程序编译链接时通过向编译器(&lt;code&gt;gcc&lt;/code&gt;)传递参数&lt;code&gt;-L &#39;Lib
         
       
     
@@ -239,7 +242,8 @@
       
         
         
-          &lt;h1 id=&quot;接口描述&quot;&gt;&lt;a href=&quot;#接口描述&quot; class=&quot;headerlink&quot; title=&quot;接口描述&quot;&gt;&lt;/a&gt;接口描述&lt;/h1&gt;&lt;h2 id=&quot;启动解码引擎&quot;&gt;&lt;a href=&quot;#启动解码引擎&quot; class=&quot;headerlink&quot;
+          &lt;h1 id=&quot;接口描述&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#接口描述&quot;&gt;&lt;/a&gt; 接口描述&lt;/h1&gt;
+&lt;h2 id=&quot;启动解码引擎&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#启动解码引擎&quot;&gt;&lt;/a&gt;
         
       
     
@@ -291,7 +295,8 @@
       
         
         
-          &lt;h1 id=&quot;安装增强功能&quot;&gt;&lt;a href=&quot;#安装增强功能&quot; class=&quot;headerlink&quot; title=&quot;安装增强功能&quot;&gt;&lt;/a&gt;安装增强功能&lt;/h1&gt;&lt;h1 id=&quot;设置共享目录&quot;&gt;&lt;a href=&quot;#设置共享目录&quot; class=&quot;headerlink&quot;
+          &lt;h1 id=&quot;安装增强功能&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#安装增强功能&quot;&gt;&lt;/a&gt; 安装增强功能&lt;/h1&gt;
+&lt;h1 id=&quot;设置共享目录&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;
         
       
     
@@ -319,8 +324,9 @@
       
         
         
-          &lt;h1 id=&quot;示例&quot;&gt;&lt;a href=&quot;#示例&quot; class=&quot;headerlink&quot; title=&quot;示例&quot;&gt;&lt;/a&gt;示例&lt;/h1&gt;&lt;p&gt;先来看看使用matlablib显示一条波形数据的例子&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;import
+          &lt;h1 id=&quot;示例&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#示例&quot;&gt;&lt;/a&gt; 示例&lt;/h1&gt;
+&lt;p&gt;先来看看使用matlablib显示一条波形数据的例子&lt;/p&gt;
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code
         
       
     
@@ -460,7 +466,7 @@
         
           &lt;p&gt;QCryptographicHash类提供接口来生成密码散列，如生成MD4、MD5、Sha256等等。&lt;/p&gt;
 &lt;p&gt;生成MD5示例:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;c++&quot;&gt;#include
+&lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;c++&quot;&gt;&lt;span
         
       
     
@@ -492,7 +498,8 @@
       
         
         
-          &lt;h2 id=&quot;资料&quot;&gt;&lt;a href=&quot;#资料&quot; class=&quot;headerlink&quot; title=&quot;资料&quot;&gt;&lt;/a&gt;资料&lt;/h2&gt;&lt;ul&gt;
+          &lt;h2 id=&quot;资料&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#资料&quot;&gt;&lt;/a&gt; 资料&lt;/h2&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;a
         
       
@@ -521,8 +528,9 @@
       
         
         
-          &lt;h2 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h2&gt;&lt;p&gt;技能： 既为个人所拥有的技术能力，可以来实现某种目的。&lt;/p&gt;
-&lt;h2 id=&quot;分类&quot;&gt;&lt;a href=&quot;#分类&quot;
+          &lt;h2 id=&quot;概念&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#概念&quot;&gt;&lt;/a&gt; 概念&lt;/h2&gt;
+&lt;p&gt;技能： 既为个人所拥有的技术能力，可以来实现某种目的。&lt;/p&gt;
+&lt;h2 id=&quot;分类&quot;&gt;&lt;a
         
       
     

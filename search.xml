@@ -553,17 +553,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[README for FPGA]]></title>
-    <url>%2F2017%2F11%2F15%2FFPGA-2017-11-15-FPGA-README%2F</url>
-    <content type="text"><![CDATA[1 FPGA开发流程2 硬件描述语言3 仿真实践4 有限状态机5 IP核使用6 FPGA调试技巧7 FPGA设计技巧8 AD9706开发9 DDS原理和实现10 FPGA的高级IO资源]]></content>
-      <categories>
-        <category>FPGA</category>
-      </categories>
-      <tags>
-        <tag>README FPGA</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[FPGA开发基本流程]]></title>
     <url>%2F2017%2F11%2F15%2FFPGA-2017-11-15-FPGA%E5%BC%80%E5%8F%91%E5%9F%BA%E6%9C%AC%E6%B5%81%E7%A8%8B%2F</url>
     <content type="text"></content>
@@ -572,6 +561,17 @@
       </categories>
       <tags>
         <tag>开发基本流程 FPGA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[README for FPGA]]></title>
+    <url>%2F2017%2F11%2F15%2FFPGA-2017-11-15-FPGA-README%2F</url>
+    <content type="text"><![CDATA[1 FPGA开发流程2 硬件描述语言3 仿真实践4 有限状态机5 IP核使用6 FPGA调试技巧7 FPGA设计技巧8 AD9706开发9 DDS原理和实现10 FPGA的高级IO资源]]></content>
+      <categories>
+        <category>FPGA</category>
+      </categories>
+      <tags>
+        <tag>README FPGA</tag>
       </tags>
   </entry>
   <entry>

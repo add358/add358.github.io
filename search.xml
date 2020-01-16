@@ -517,6 +517,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Git]]></title>
+    <url>%2F2017%2F11%2F20%2FTool-2017-11-20-Git%2F</url>
+    <content type="text"><![CDATA[图形工具 gitkraken: gitea : 类gitlab工具 参考资料 Git-Scm Git子模块]]></content>
+      <categories>
+        <category>Tool</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Git branch]]></title>
     <url>%2F2017%2F11%2F20%2FTool-2017-11-20-git-branch%2F</url>
     <content type="text"><![CDATA[1 查看远程分支加上”-a”可以查看远程分支,远程分支会用红色表示出来. $ git branch -a 2 clone远程分支git checkout -b test origin/test # origin/test是从git branch -a 查看到 3 删除远程分支$ git push origin --delete &lt;branchName&gt; #或者 $ git push origin :&lt;branchName&gt; #摄像头一个空分支到远程分支 4 删除不存在对应远程分支的本地分支git fetch -p 5 重命令远程分支$ git branch -m]]></content>
@@ -526,17 +537,6 @@
       <tags>
         <tag>Git</tag>
         <tag>branch</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Git]]></title>
-    <url>%2F2017%2F11%2F20%2FTool-2017-11-20-Git%2F</url>
-    <content type="text"><![CDATA[图形工具 gitkraken: gitea : 类gitlab工具 参考资料 Git-Scm Git子模块]]></content>
-      <categories>
-        <category>Tool</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
